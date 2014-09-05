@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title></title>
+            
+            <script type="text/javascript" src="jquery.min.js"></script>
+            <script type="text/javascript" src="highcharts.js"></script>
+            <script type="text/javascript">
+                var options = {
+
+                    credits: {
+                        enabled: false
+                    },
+                    
+                    title:{
+                        text:''
+                    },
+                    
+                    chart:{
+                        spacingBottom: 5,
+                        spacingTop: 5,
+                        spacingLeft: 0,
+                        spacingRight: 0,
+                        renderTo: 'container',
+                        type: 'spline'
+                    },
+                    
+                    legend: {
+                        enabled: false
+                    },
+                    
+                    xAxis: {
+                        type: 'datetime',
+                        tickInterval: 4 * 3600 * 1000,
+                        min: 0,
+                        max: 24 * 3600 * 1000,
+                        title: {
+                            text: null,
+                            
+                        },
+                        dateTimeLabelFormats : {
+                            day : '%H:%M'
+                        },
+                    },
+
+                    tooltip: {
+                      enabled: false,
+                    },
+                    
+                    
+                    
+                    yAxis: {
+                        labels: {
+                          align: 'left',
+                          x: 0,
+                          y: -8
+                        },
+                        title: {
+                            text: "mg/dl",
+                            margin: 5
+                        },
+                        min: 0,
+                        max: 150,
+                        plotBands: [{ // mark the weekend
+                                    color: '#FCFFC5',
+                                    from: 72,
+                                    to: 108
+                                    }],
+                    },
+
+                    plotOptions: {
+                        spline: {
+                        lineWidth: 4,
+                        marker: {
+                          radius: 4,
+                          lineColor: '#666666',
+                          lineWidth: 1,
+                          enabled: true
+                        },
+                      }      
+                    },
+
+                    
+                    
+                    
+                    series: [],
+                };
+            
+                var initialData = [
+                               {
+                               "name": "before",
+                               "data": [
+                                        [
+                                         3600000,
+                                         100
+                                         ],
+                                        // [
+                                        //  3600000,
+                                        //  100
+                                        //  ],
+                                        //  [4800000,200],
+                                        //  [6000000,200]
+                                        ]
+                                }
+                               ];
+                               
+                    options.series = initialData;
+
+                    var chart;
+                    $(document).ready(function() {
+                         chart = new Highcharts.Chart(options);
+                                      
+                      });
+                      
+                      function clearPlot() {
+                          var series=chart.series;
+                          while(series.length > 0) {
+                              series[0].remove(false);
+                          }
+                          chart.redraw();
+                      };
+            
+                      
+
+                    function updateData(json) {
+                            clearPlot();
+                            var obj = JSON.parse(json);
+                            chart.addSeries(obj, false);
+                            chart.redraw();
+                    };
+            
+            
+                </script>
+            
+            </head>
+	<body>
+		<!-- 3. Add the container -->
+		<div id="container" style="width: 320px; height: 200px; margin: 0 auto"></div>
+	</body>
+</html>

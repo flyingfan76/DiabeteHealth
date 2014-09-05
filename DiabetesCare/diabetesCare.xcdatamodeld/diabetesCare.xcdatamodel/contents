@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="HistoryMedicalRecord" representedClassName="HistoryMedicalRecord" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="imageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="toImage" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ImageRecord" inverseName="toMedical" inverseEntity="ImageRecord" syncable="YES"/>
+        <relationship name="toMaster" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileMasterData" inverseName="toMedicalRecord" inverseEntity="ProfileMasterData" syncable="YES"/>
+    </entity>
+    <entity name="HistoryRecords" representedClassName="HistoryRecords" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="toMaster" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ProfileMasterData" inverseName="toHistory" inverseEntity="ProfileMasterData" syncable="YES"/>
+    </entity>
+    <entity name="ImageRecord" representedClassName="ImageRecord" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="toMedical" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HistoryMedicalRecord" inverseName="toImage" inverseEntity="HistoryMedicalRecord" syncable="YES"/>
+    </entity>
+    <entity name="ProfileMasterData" representedClassName="ProfileMasterData" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="toHistory" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HistoryRecords" inverseName="toMaster" inverseEntity="HistoryRecords" syncable="YES"/>
+        <relationship name="toMedicalRecord" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HistoryMedicalRecord" inverseName="toMaster" inverseEntity="HistoryMedicalRecord" syncable="YES"/>
+        <relationship name="toToday" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TodayRecord" inverseName="toMaster" inverseEntity="TodayRecord" syncable="YES"/>
+    </entity>
+    <entity name="TodayRecord" representedClassName="TodayRecord" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="toMaster" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ProfileMasterData" inverseName="toToday" inverseEntity="ProfileMasterData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistoryRecords" positionX="-4518" positionY="-522" width="128" height="103"/>
+        <element name="ProfileMasterData" positionX="-4788" positionY="-666" width="135" height="178"/>
+        <element name="TodayRecord" positionX="-4518" positionY="-693" width="128" height="103"/>
+        <element name="HistoryMedicalRecord" positionX="-4968" positionY="-436" width="128" height="118"/>
+        <element name="ImageRecord" positionX="-5130" positionY="-313" width="128" height="58"/>
+    </elements>
+</model>

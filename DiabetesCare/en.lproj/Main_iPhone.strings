@@ -1,0 +1,72 @@
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "0ik-y3-Vmu"; */
+"0ik-y3-Vmu.title" = "Title";
+
+/* Class = "IBUILabel"; text = "blood Pressure"; ObjectID = "7Zm-Cn-Jjf"; */
+"7Zm-Cn-Jjf.text" = "blood Pressure";
+
+/* Class = "IBUILabel"; text = "Ingredients"; ObjectID = "9ga-IO-LUG"; */
+"9ga-IO-LUG.text" = "Ingredients";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Aes-na-pow"; */
+"Aes-na-pow.text" = "Label";
+
+/* Class = "IBUIViewController"; title = "Recipe Detail View Controller"; ObjectID = "Ag1-zn-BKc"; */
+"Ag1-zn-BKc.title" = "Recipe Detail View Controller";
+
+/* Class = "IBUITextField"; text = "555"; ObjectID = "ApI-8Z-34Q"; */
+"ApI-8Z-34Q.text" = "555";
+
+/* Class = "IBUILabel"; text = "last updated"; ObjectID = "EaB-h3-h0e"; */
+"EaB-h3-h0e.text" = "last updated";
+
+/* Class = "IBUILabel"; text = "name"; ObjectID = "FBw-nw-mbI"; */
+"FBw-nw-mbI.text" = "name";
+
+/* Class = "IBUILabel"; text = "Avg"; ObjectID = "I8b-Gj-dQu"; */
+"I8b-Gj-dQu.text" = "Avg";
+
+/* Class = "IBUITextField"; text = "555"; ObjectID = "Ja3-gu-ETo"; */
+"Ja3-gu-ETo.text" = "555";
+
+/* Class = "IBUILabel"; text = "Before"; ObjectID = "Jf0-Jg-sGv"; */
+"Jf0-Jg-sGv.text" = "Before";
+
+/* Class = "IBUILabel"; text = "RecipeName"; ObjectID = "OKt-NW-eAX"; */
+"OKt-NW-eAX.text" = "RecipeName";
+
+/* Class = "IBUILabel"; text = "Age"; ObjectID = "P6r-he-ZBt"; */
+"P6r-he-ZBt.text" = "Age";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "QAL-7g-Qud"; */
+"QAL-7g-Qud.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = "180"; ObjectID = "Vnk-lJ-U1p"; */
+"Vnk-lJ-U1p.text" = "180";
+
+/* Class = "IBUILabel"; text = "80"; ObjectID = "WsU-UJ-KUg"; */
+"WsU-UJ-KUg.text" = "80";
+
+/* Class = "IBUILabel"; text = "After"; ObjectID = "XMj-er-v4L"; */
+"XMj-er-v4L.text" = "After";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "ZRO-GX-fJT"; */
+"ZRO-GX-fJT.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Preptime"; ObjectID = "bp0-SE-PCp"; */
+"bp0-SE-PCp.text" = "Preptime";
+
+/* Class = "IBUILabel"; text = "(kg)"; ObjectID = "oKn-rB-NkA"; */
+"oKn-rB-NkA.text" = "(kg)";
+
+/* Class = "IBUILabel"; text = "(cm)"; ObjectID = "sLg-3V-bFu"; */
+"sLg-3V-bFu.text" = "(cm)";
+
+/* Class = "IBUILabel"; text = "Avg"; ObjectID = "sQs-rI-TTi"; */
+"sQs-rI-TTi.text" = "Avg";
+
+/* Class = "IBUILabel"; text = "PrepTime"; ObjectID = "wjC-98-ufU"; */
+"wjC-98-ufU.text" = "PrepTime";
+
+/* Class = "IBUILabel"; text = "Avg"; ObjectID = "zCo-ch-dKl"; */
+"zCo-ch-dKl.text" = "Avg";

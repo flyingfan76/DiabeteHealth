@@ -1,0 +1,228 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script src="highstock.js"></script>
+<title>My Demo 1</title>
+    <script>
+$(function () {
+    var sugardata = [
+        [1407081600000, 100]
+    ];
+
+    
+    var enddata = new Date().getTime() + 7*24*3600*1000;
+    var startDate = new Date(2014,01,01);
+    
+    window.sugar = new Highcharts.StockChart({
+            chart: {
+                renderTo: 'bloodSugar',
+                zoomType: 'x',
+                type:'spline'
+                                            
+            },
+
+            rangeSelector: {
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1d'
+                }, {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                }, {
+                    type: 'year',
+                    count: 1,
+                    text: '1y'
+                }, {
+                    type: 'all',
+                    text: 'All'
+                }],
+                inputEnabled: false, // it supports only days
+                selected : 3 // all
+            },
+                                             
+            scrollbar: {
+                liveRedraw: false,
+                enabled : false
+            },
+
+            xAxis: {
+                ordinal : false,
+                min: startDate,
+                minRange: 24 * 3600 * 1000, // one hour
+                max: enddata
+            },
+                                             
+            navigator : {
+                 adaptToUpdatedData: true,
+                 series : {
+                    data : sugardata
+                 },
+                 enabled : false
+            },
+                                             
+            tooltip: {
+                enabled: false,
+            },
+                                             
+            title: {
+                text: 'Blood Sugar'
+            },
+            
+            plotOptions: {
+                spline: {
+                    lineWidth: 4,
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1,
+                        enabled: true
+                    },
+                }
+            },
+
+            series: [{
+                name: 'before',
+                data: sugardata,
+            }]
+        });
+
+
+    var pressuredata = [
+        [1407081600000, 100]
+    ];
+
+   window.pressure = new Highcharts.StockChart({
+            chart: {
+                renderTo: 'bloodPressure',
+                zoomType: 'x',
+                                               type:'spline'
+                                            
+            },
+
+            rangeSelector: {
+                buttons: [{
+                    type: 'day',
+                    count: 1,
+                    text: '1d'
+                }, {
+                    type: 'month',
+                    count: 1,
+                    text: '1m'
+                }, {
+                    type: 'year',
+                    count: 1,
+                    text: '1y'
+                }, {
+                    type: 'all',
+                    text: 'All'
+                }],
+                inputEnabled: false, // it supports only days
+                selected : 3 // all
+            },
+                                             
+            scrollbar: {
+                liveRedraw: false,
+                enabled : false
+            },
+
+            xAxis: {
+                ordinal : false,
+                min: startDate,
+                minRange: 24 * 3600 * 1000, // one hour
+                max: enddata
+            },
+                                             
+            navigator : {
+                 adaptToUpdatedData: true,
+                 series : {
+                    data : pressuredata
+                 },
+                 enabled : false
+            },
+                                               
+                                               tooltip: {
+                                               enabled: false,
+                                               },
+
+
+            title: {
+                text: 'Blood Sugar'
+            },
+                                               
+                                               plotOptions: {
+                                               spline: {
+                                               lineWidth: 4,
+                                               marker: {
+                                               radius: 4,
+                                               lineColor: '#666666',
+                                               lineWidth: 1,
+                                               enabled: true
+                                               },
+                                               }
+                                               },
+
+
+            series: [{
+                name: 'before',
+                data: pressuredata,
+            }]
+        })
+
+
+    });
+  
+    
+    function clearSugar() {
+        //console.log("clear plot data!!!");
+        var series=window.sugar.series;
+        while(series.length > 0) {
+            series[0].remove(false);
+        }
+        window.sugar.redraw();
+    };
+    
+    
+    
+    function updateSugarData(json) {
+        clearSugar();
+        var obj = JSON.parse(json);
+//        var dataString = "{\"name\":\"before\",\"data\":[[1406995200000, 100],[null,null]]}";
+//        var obj = JSON.parse(dataString);
+       
+       window.sugar.addSeries(obj, false);
+       window.sugar.redraw();
+  
+    };
+
+
+       function clearPreassure() {
+        //console.log("clear plot data!!!");
+        var series=window.pressure.series;
+        while(series.length > 0) {
+            series[0].remove(false);
+        }
+        window.pressure.redraw();
+    };
+    
+    
+    
+    function updatePressureData(json) {
+        clearPreassure();
+        var obj = JSON.parse(json);
+//        var dataString = "{\"name\":\"before\",\"data\":[[1406995200000, 100],[null,null]]}";
+//        var obj = JSON.parse(dataString);
+       
+       window.pressure.addSeries(obj, false);
+       window.pressure.redraw();
+  
+    };
+
+    </script>
+</head>
+<body>
+<div id="bloodSugar" style="width:960px; height:400px;margin: 0"></div>
+<div id="bloodPressure" style="width:960px; height:400px;margin: 0"></div>
+</body>
+</html>
