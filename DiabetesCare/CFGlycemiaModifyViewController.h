@@ -25,5 +25,7 @@
 @property (nonatomic,retain) UIDatePicker *inputView;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedSelection;
+@property (weak, nonatomic) IBOutlet UILabel *sampleTime;
+@property (weak, nonatomic) IBOutlet UILabel *sampleValue;
 
 @end

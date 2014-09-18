@@ -68,7 +68,7 @@
     
     
     
-	TKCalendarDayView *myCalendarView = [[TKCalendarDayView alloc] initWithFrame:CGRectMake(0,64,320,120)];
+	TKCalendarDayView *myCalendarView = [[TKCalendarDayView alloc] initWithFrame:CGRectMake(0,64,320,80)];
 	myCalendarView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     myCalendarView.date = self.workingDate;
@@ -82,16 +82,16 @@
     //self.myDatePicker.maximumDate = [NSDate date];
     
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 381, 320, 20)];
-    UILabel *labelView = [[UILabel alloc] initWithFrame:CGRectMake(10, 2, 300, 16)];
-    labelView.text = NSLocalizedString(@"Add or Modify you record",nil);
-    labelView.textAlignment = NSTextAlignmentCenter;
-    labelView.backgroundColor =  [UIColor colorWithRed:2/255.0f
-                                                 green:79.0f/255.0f
-                                                  blue:91.0f/255.0f
-                                                 alpha:1.0f];
-    [headerView addSubview:labelView];
-    self.myDetailTableView.tableHeaderView = headerView;
+//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 381, 320, 20)];
+//    UILabel *labelView = [[UILabel alloc] initWithFrame:CGRectMake(10, 2, 300, 16)];
+//    labelView.text = NSLocalizedString(@"Add or Modify you record",nil);
+//    labelView.textAlignment = NSTextAlignmentCenter;
+//    labelView.backgroundColor =  [UIColor colorWithRed:2/255.0f
+//                                                 green:79.0f/255.0f
+//                                                  blue:91.0f/255.0f
+//                                                 alpha:1.0f];
+//    [headerView addSubview:labelView];
+//    self.myDetailTableView.tableHeaderView = headerView;
     
 }
 
@@ -137,7 +137,16 @@
 - (void)configureCell:(CFBloodPressureTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     TodayRecord *info = [_fetchedResultsController objectAtIndexPath:indexPath];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+    
+    
+    cell.sampleTime.text = NSLocalizedString(@"Sample Time",nil);
+    cell.sampleValue.text = NSLocalizedString(@"Sample Value",nil);
     [formatter setDateFormat:@"HH:mm:ss"];
+
+
+    UIImage *newImage = [UIImage imageNamed:@"bloodpressure.jpeg"];
+    [cell.imageView setImage:newImage];
     
     //Optionally for time zone converstions
     

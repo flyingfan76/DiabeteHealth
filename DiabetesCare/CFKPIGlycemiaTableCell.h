@@ -14,5 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *myBloodSugar;
 
 @property (weak, nonatomic) IBOutlet UIImageView *myTime;
+@property (weak, nonatomic) IBOutlet UILabel *sampleTime;
+@property (weak, nonatomic) IBOutlet UILabel *sampleValue;
 
 @end

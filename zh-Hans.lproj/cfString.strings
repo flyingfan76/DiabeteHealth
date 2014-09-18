@@ -15,3 +15,5 @@
 "glycemiaAfterFood" = "餐后";
 "glycemiaBeforeFood" = "餐前";
 "bloodPressure" = "血压";
+"Sample Time" = "取样时间";
+"Sample Value" = "取样值";

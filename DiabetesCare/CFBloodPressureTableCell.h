@@ -12,6 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *myDatePicker;
 @property (weak, nonatomic) IBOutlet UITextField *myBloodPressure;
+@property (weak, nonatomic) IBOutlet UILabel *sampleTime;
+@property (weak, nonatomic) IBOutlet UILabel *sampleValue;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

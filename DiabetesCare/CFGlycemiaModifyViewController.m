@@ -30,6 +30,11 @@
     // Do any additional setup after loading the view.
     
     self.mySegmentedSelection.selectedSegmentIndex = 0;
+    [self.mySegmentedSelection setTitle:NSLocalizedString(@"Before Food",nil) forSegmentAtIndex:0];
+    [self.mySegmentedSelection setTitle:NSLocalizedString(@"After Food",nil) forSegmentAtIndex:1];
+    self.sampleTime.text = NSLocalizedString(@"Sample Time", nil);
+    self.sampleValue.text = NSLocalizedString(@"Sample Value", nil);
+    
     
     if (self.currentRecord) {
         
