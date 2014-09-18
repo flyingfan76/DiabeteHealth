@@ -56,11 +56,21 @@
         self.workingDate = [cal dateFromComponents:comps]; //This variable should now be pointing at
     }
     
-    TKCalendarMonthView *myCalendarView = [[TKCalendarMonthView alloc] initWithFrame:CGRectMake(0, 64, 320, 100)];
+
+    
+    TKCalendarMonthView *myCalendarView = [[TKCalendarMonthView alloc] initWithFrame:CGRectMake(0, 64, 320, 120)];
     [myCalendarView selectDate:self.workingDate];
     myCalendarView.delegate = self;
     myCalendarView.backgroundColor = [UIColor colorWithRed:(160/255.0) green:(97/255.0) blue:(5/255.0) alpha:1] ;
-    [self.tableView.tableHeaderView addSubview:myCalendarView];
+    self.tableView.tableHeaderView = myCalendarView;
+
+
+    //self.tableView.tableHeaderView = myCalendarView;
+//    NSLog(@"table header view=%@",self.tableView.tableHeaderView);
+    
+    self.glycemiaAfterFood.text = NSLocalizedString(@"glycemiaAfterFood", nil);
+    self.glycemiaBeforeFood.text = NSLocalizedString(@"glycemiaBeforeFood",nil);
+    self.bloodPressure.text = NSLocalizedString(@"bloodPressure",nil);
     
     self.bmiSlider.maximumValue = 30.0f;
     self.bmiSlider.minimumValue = 0.0f;
@@ -71,11 +81,33 @@
     }else{
         self.bmiSlider.value = value;
     }
+    
+    self.bmiLabel.text = [[NSNumber numberWithFloat:self.bmiSlider.value] stringValue];
 
    
     [self updateStaticContent];
 }
 
+
+#pragma mark header
+
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    
+//    if(section == 0) {
+//        return tableView.tableHeaderView;
+//    } else {
+//        return nil;
+//    }
+//    
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    if(section == 0)
+//        return tableView.tableHeaderView.frame.size.height;
+//    else
+//        return 30;
+//}
 
 
 
@@ -235,10 +267,16 @@
         [UIView setAnimationDelay:0.1];
     }
     
-    CGRect headerFrame           = self.tableView.tableHeaderView.frame;
-    headerFrame.size.height = monthView.frame.size.height;
-    self.tableView.tableHeaderView.frame            = headerFrame;
     
+//    [self.tableView.tableHeaderView setNeedsLayout];
+//    [self.tableView.tableHeaderView layoutIfNeeded];
+//    CGFloat height = [monthView  systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + monthView.frame.origin.y; // adding the origin because innerHeaderView starts partway down headerView.
+//    
+//    CGRect headerFrame = self.tableView.tableHeaderView.frame;
+//    headerFrame.size.height = height;
+    self.tableView.tableHeaderView = self.tableView.tableHeaderView;
+    
+
     //NSLog(@"SIZE %@",self.tableView.frame);
     
     if(animated) [UIView commitAnimations];

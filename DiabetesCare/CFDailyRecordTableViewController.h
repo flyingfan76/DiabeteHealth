@@ -25,6 +25,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *avgGlycemiaBeforeFood;
 @property (weak, nonatomic) IBOutlet UILabel *avgGlycemiaAfterFood;
 @property (weak, nonatomic) IBOutlet UILabel *avgBloodPressure;
+@property (weak, nonatomic) IBOutlet UILabel *glycemiaBeforeFood;
+@property (weak, nonatomic) IBOutlet UILabel *glycemiaAfterFood;
+@property (weak, nonatomic) IBOutlet UILabel *bloodPressure;
+@property (weak, nonatomic) IBOutlet UILabel *bmiLabel;
 
 
 @end

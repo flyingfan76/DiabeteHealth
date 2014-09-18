@@ -32,6 +32,8 @@
 		6E3E571B197632BB000398CD /* BMIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E571A197632BB000398CD /* BMIPage.html */; };
 		6E3E57201976744B000398CD /* CFKPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571F1976744B000398CD /* CFKPIViewController.m */; };
 		6E3E572A19779E4D000398CD /* cfAjaxURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E572919779E4D000398CD /* cfAjaxURLProtocol.m */; };
+		6E71915B19C68B9500BEB144 /* cfString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E71915D19C68B9500BEB144 /* cfString.strings */; };
+		6E71916119C6952A00BEB144 /* drRecord.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6E71916019C6952A00BEB144 /* drRecord.jpeg */; };
 		6EA977621985F19300DA9B9A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA977611985F19300DA9B9A /* CoreData.framework */; };
 		6EA978321989E23900DA9B9A /* CFGlycemiaModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA978311989E23900DA9B9A /* CFGlycemiaModifyViewController.m */; };
 		6EA97836198B94B500DA9B9A /* cfHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97835198B94B500DA9B9A /* cfHistoryViewController.m */; };
@@ -61,7 +63,6 @@
 		6EA97871199233E800DA9B9A /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97859199233E800DA9B9A /* RecipeTableCell.m */; };
 		6EA97872199233E800DA9B9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785B199233E800DA9B9A /* about.html */; };
 		6EA97873199233E800DA9B9A /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785C199233E800DA9B9A /* about.jpg */; };
-		6EA97877199351B800DA9B9A /* cfString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EA97876199351B800DA9B9A /* cfString.strings */; };
 		6EB4BAEB196BE89600073FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEA196BE89600073FA5 /* Foundation.framework */; };
 		6EB4BAED196BE89700073FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEC196BE89700073FA5 /* CoreGraphics.framework */; };
 		6EB4BAEF196BE89700073FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEE196BE89700073FA5 /* UIKit.framework */; };
@@ -79,7 +80,6 @@
 		6EB4BB19196BE89700073FA5 /* DiabetesCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4BB18196BE89700073FA5 /* DiabetesCareTests.m */; };
 		6EB4BB25196D1D0000073FA5 /* diabetic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EB4BB24196D1D0000073FA5 /* diabetic.jpg */; };
 		6EB4BB2E196E767000073FA5 /* CFMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4BB2D196E767000073FA5 /* CFMenuTableViewCell.m */; };
-		6EB4BB31196E81A300073FA5 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB4BB30196E81A300073FA5 /* unnamed.png */; };
 		6EB4BB34196E82CB00073FA5 /* CFMenuTableViewCellContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4BB33196E82CB00073FA5 /* CFMenuTableViewCellContent.m */; };
 		6ECD415C1974FF3C009C6BD1 /* CFDailyRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD415B1974FF3C009C6BD1 /* CFDailyRecordTableViewController.m */; };
 		6ECF1BA51977AD090015DEFA /* KPIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6ECF1BA41977AD090015DEFA /* KPIPage.html */; };
@@ -165,6 +165,14 @@
 		6E3E571F1976744B000398CD /* CFKPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKPIViewController.m; sourceTree = "<group>"; };
 		6E3E572819779E4D000398CD /* cfAjaxURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfAjaxURLProtocol.h; sourceTree = "<group>"; };
 		6E3E572919779E4D000398CD /* cfAjaxURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cfAjaxURLProtocol.m; sourceTree = "<group>"; };
+		6E71915619C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
+		6E71915819C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		6E71915919C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6E71915A19C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6E71915C19C68B9500BEB144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/cfString.strings; sourceTree = "<group>"; };
+		6E71915E19C68BAA00BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/cfString.strings"; sourceTree = "<group>"; };
+		6E71915F19C68E8D00BEB144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		6E71916019C6952A00BEB144 /* drRecord.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drRecord.jpeg; sourceTree = "<group>"; };
 		6EA977611985F19300DA9B9A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6EA978301989E23900DA9B9A /* CFGlycemiaModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGlycemiaModifyViewController.h; sourceTree = "<group>"; };
 		6EA978311989E23900DA9B9A /* CFGlycemiaModifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGlycemiaModifyViewController.m; sourceTree = "<group>"; };
@@ -200,7 +208,6 @@
 		6EA97859199233E800DA9B9A /* RecipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableCell.m; sourceTree = "<group>"; };
 		6EA9785B199233E800DA9B9A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		6EA9785C199233E800DA9B9A /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
-		6EA97876199351B800DA9B9A /* cfString.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = cfString.strings; sourceTree = "<group>"; };
 		6EA978781993524900DA9B9A /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
 		6EA97948199B0EC200DA9B9A /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = "tapkulibrary-master/src/TapkuLibrary.xcodeproj"; sourceTree = "<group>"; };
 		6EB4BAE7196BE89600073FA5 /* DiabetesCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,7 +233,6 @@
 		6EB4BB24196D1D0000073FA5 /* diabetic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diabetic.jpg; sourceTree = "<group>"; };
 		6EB4BB2C196E767000073FA5 /* CFMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMenuTableViewCell.h; sourceTree = "<group>"; };
 		6EB4BB2D196E767000073FA5 /* CFMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFMenuTableViewCell.m; sourceTree = "<group>"; };
-		6EB4BB30196E81A300073FA5 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unnamed.png; path = ../download/unnamed.png; sourceTree = "<group>"; };
 		6EB4BB32196E82CB00073FA5 /* CFMenuTableViewCellContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFMenuTableViewCellContent.h; sourceTree = "<group>"; };
 		6EB4BB33196E82CB00073FA5 /* CFMenuTableViewCellContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFMenuTableViewCellContent.m; sourceTree = "<group>"; };
 		6ECD415A1974FF3C009C6BD1 /* CFDailyRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDailyRecordTableViewController.h; sourceTree = "<group>"; };
@@ -473,11 +479,11 @@
 		6EA9787419934A3800DA9B9A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				6E71916019C6952A00BEB144 /* drRecord.jpeg */,
 				6E2111E5196FAAC6007F51EF /* diaryhistory.png */,
 				6E2111E6196FAAC6007F51EF /* diarytoday.png */,
 				6E2111E7196FAAC6007F51EF /* food.png */,
 				6EB4BB24196D1D0000073FA5 /* diabetic.jpg */,
-				6EB4BB30196E81A300073FA5 /* unnamed.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -485,7 +491,7 @@
 		6EA978751993519600DA9B9A /* stringresource */ = {
 			isa = PBXGroup;
 			children = (
-				6EA97876199351B800DA9B9A /* cfString.strings */,
+				6E71915D19C68B9500BEB144 /* cfString.strings */,
 				6EA978781993524900DA9B9A /* utilities.h */,
 			);
 			name = stringresource;
@@ -710,6 +716,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6EB4BADE196BE89600073FA5;
 			productRefGroup = 6EB4BAE8196BE89600073FA5 /* Products */;
@@ -768,14 +775,14 @@
 				6EA97866199233E800DA9B9A /* japanese_noodle_with_pork.jpg in Resources */,
 				6EB4BB06196BE89700073FA5 /* Images.xcassets in Resources */,
 				6E3E56F519750688000398CD /* height.png in Resources */,
-				6EA97877199351B800DA9B9A /* cfString.strings in Resources */,
+				6E71915B19C68B9500BEB144 /* cfString.strings in Resources */,
 				6E3E571B197632BB000398CD /* BMIPage.html in Resources */,
 				6E25489019ADDF9700D4F59A /* addPhoto.png in Resources */,
 				6E2111EA196FAAC6007F51EF /* food.png in Resources */,
 				6E2111E8196FAAC6007F51EF /* diaryhistory.png in Resources */,
 				6EA9786D199233E800DA9B9A /* vegetable_curry.jpg in Resources */,
+				6E71916119C6952A00BEB144 /* drRecord.jpeg in Resources */,
 				6E2111E9196FAAC6007F51EF /* diarytoday.png in Resources */,
-				6EB4BB31196E81A300073FA5 /* unnamed.png in Resources */,
 				6EA97861199233E800DA9B9A /* green_tea.jpg in Resources */,
 				6ECF1BA51977AD090015DEFA /* KPIPage.html in Resources */,
 				6EB4BAFE196BE89700073FA5 /* Main_iPhone.storyboard in Resources */,
@@ -872,10 +879,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6E71915D19C68B9500BEB144 /* cfString.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E71915C19C68B9500BEB144 /* en */,
+				6E71915E19C68BAA00BEB144 /* zh-Hans */,
+			);
+			name = cfString.strings;
+			sourceTree = "<group>";
+		};
 		6EB4BAF3196BE89700073FA5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6EB4BAF4196BE89700073FA5 /* en */,
+				6E71915919C68AC300BEB144 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -884,6 +901,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6EB4BAFD196BE89700073FA5 /* Base */,
+				6E71915619C68AC300BEB144 /* zh-Hans */,
+				6E71915F19C68E8D00BEB144 /* en */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -892,6 +911,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6EB4BB00196BE89700073FA5 /* Base */,
+				6E71915819C68AC300BEB144 /* zh-Hans */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -900,6 +920,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6EB4BB16196BE89700073FA5 /* en */,
+				6E71915A19C68AC300BEB144 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

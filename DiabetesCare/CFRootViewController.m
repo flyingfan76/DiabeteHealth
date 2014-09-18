@@ -27,11 +27,11 @@
 - (void) initTable
 {
     CFMenuTableViewCellContent *diaryToday = [[CFMenuTableViewCellContent alloc] init];
-    diaryToday.menuLabel = NSLocalizedString(@"Diaries", nil);
+    diaryToday.menuLabel = NSLocalizedString(@"Personal Diaries", nil);
     diaryToday.logoFileName = @"diarytoday.png";
     
     CFMenuTableViewCellContent *diaryHistory = [[CFMenuTableViewCellContent alloc] init];
-    diaryHistory.menuLabel = NSLocalizedString(@"History Review", nil);
+    diaryHistory.menuLabel = NSLocalizedString(@"History Overview", nil);
     diaryHistory.logoFileName = @"diaryhistory.png";
 
     CFMenuTableViewCellContent *recommendFood = [[CFMenuTableViewCellContent alloc] init];
@@ -39,8 +39,8 @@
     recommendFood.logoFileName = @"food.png";
 
     CFMenuTableViewCellContent *network = [[CFMenuTableViewCellContent alloc] init];
-    network.menuLabel = NSLocalizedString(@"Diabetes Network",nil);
-    network.logoFileName = @"unnamed.png";
+    network.menuLabel = NSLocalizedString(@"Doctor Records",nil);
+    network.logoFileName = @"drRecord.jpeg";
     
     menuContents = [NSArray arrayWithObjects: diaryToday,diaryHistory,recommendFood,network, nil];
 }
@@ -49,8 +49,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self.menuTableView.layer setCornerRadius: 7.0f];
-    [self.menuTableView.layer setMasksToBounds:YES];
+    //[self.menuTableView.layer setCornerRadius: 7.0f];
+    //[self.menuTableView.layer setMasksToBounds:YES];
     
     [self initTable];
 }

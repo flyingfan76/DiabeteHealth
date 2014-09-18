@@ -1,0 +1,17 @@
+/* 
+  cfString.strings
+  DiabetesCare
+
+  Created by Chen, Fan on 8/7/14.
+  Copyright (c) 2014 HealthyCare. All rights reserved.
+*/
+
+"Personal Diaries" = "Personal Diaries";
+"History Overview" = "History Overview";
+"RecommendFood" = "Recommended Food";
+"Doctor Records" = "Dr's Records";
+"Today" = "Today";
+"Add or Modify you record" = "Add or Modify you record";
+"glycemiaAfterFood" = "After Food";
+"glycemiaBeforeFood" = "Before Food";
+"bloodPressure" = "Blood Pressure";
