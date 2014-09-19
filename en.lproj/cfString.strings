@@ -17,3 +17,10 @@
 "bloodPressure" = "Blood Pressure";
 "Sample Time" = "Sample Time";
 "Sample Value" = "Sample Value";
+"Total %d records" = "Total %d records";
+"Medical Date" = "Medical Time";
+"Take Photo" = "Take Photo";
+"Select Photo" = "Select Photo";
+"OK" = "OK";
+"Error" = "Error";
+"Device has no camera" = "Device has no camera";

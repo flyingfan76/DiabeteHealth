@@ -26,5 +26,7 @@
 - (IBAction)takePhoto:(id)sender;
 @property (nonatomic,weak) id<CFDisplaySinglePictureViewControllerDelegate> delegate;
 
+@property (weak, nonatomic) IBOutlet UIButton *choseBtn;
+@property (weak, nonatomic) IBOutlet UIButton *takePhoto;
 
 @end

@@ -32,10 +32,10 @@
     // Do any additional setup after loading the view.
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error",nil)
+                                                              message:NSLocalizedString(@"Device has no camera",nil)
                                                              delegate:nil
-                                                    cancelButtonTitle:@"OK"
+                                                    cancelButtonTitle:NSLocalizedString(@"OK", nil)
                                                     otherButtonTitles: nil];
         
         [myAlertView show];
@@ -43,6 +43,9 @@
     }
     
     self.saveBtn.enabled = false;
+    
+    [self.takePhoto setTitle:NSLocalizedString(@"Take Photo",nil) forState:UIControlStateNormal];
+    [self.choseBtn setTitle:NSLocalizedString(@"Select Photo", nil) forState:UIControlStateNormal];
     
 }
 

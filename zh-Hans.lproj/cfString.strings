@@ -17,3 +17,10 @@
 "bloodPressure" = "血压";
 "Sample Time" = "取样时间";
 "Sample Value" = "取样值";
+"Total %d records" = "总共 %d 记录";
+"Medical Date" = "就诊日期";
+"Take Photo" = "拍摄图片";
+"Select Photo" = "选择图片";
+"OK" = "好的";
+"Error" = "错误";
+"Device has no camera" = "没有相机";

@@ -12,7 +12,7 @@
 #import "CFMedicalRecordCollectionViewCell.h"
 #import "CFDisplaySinglePictureViewController.h"
 
-@interface CFEditMedicalRecordViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,CFDisplaySinglePictureViewControllerDelegate>
+@interface CFEditMedicalRecordViewController () <CFDisplaySinglePictureViewControllerDelegate>
 
 @end
 
@@ -35,7 +35,8 @@
     // Do any additional setup after loading the view.
     
     //[self.myCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"my_cell"];
-    
+
+    self.medicalTimeLabel.text = NSLocalizedString(@"Medical Date", nil);
     
     if (self.currentRecord) {
         
@@ -45,6 +46,8 @@
         //Optionally for time zone converstions
         
         NSString *stringFromDate = [formatter stringFromDate:self.currentRecord.date];
+        
+        self.workingDate = self.currentRecord.date;
         
         [self.medicalTime setText:stringFromDate];
         
@@ -224,7 +227,7 @@
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
         [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]]; //or another LocaleIdentifier instead of en_US
-        [dateFormatter setDateFormat:@"dd.MM.yyyy HH:mm:ss"]; //desired format
+        [dateFormatter setDateFormat:@"dd.MM.yyyy"]; //desired format
         
         self.currentRecord.date = [dateFormatter dateFromString:self.medicalTime.text];
         
@@ -251,8 +254,8 @@
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
-        [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]]; //or another LocaleIdentifier instead of en_US
-        [dateFormatter setDateFormat:@"dd.MM.yyyy HH:mm:ss"]; //desired format
+        //[dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]]; //or another LocaleIdentifier instead of en_US
+        [dateFormatter setDateFormat:@"dd.MM.yyyy"]; //desired format
         
         newRecord.date = [dateFormatter dateFromString:self.medicalTime.text];
         
@@ -288,7 +291,7 @@
         //Configure picker...
         [self.inputView setMinuteInterval:5];
         [self.inputView setDate:self.workingDate];
-        [self.inputView setDatePickerMode:UIDatePickerModeTime];
+        [self.inputView setDatePickerMode:UIDatePickerModeDate];
         [textField setInputView:self.inputView];
         
         [self createInputAccessoryView];
@@ -352,8 +355,7 @@
 -(void)doneDateInput{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
-    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]]; //or another LocaleIdentifier instead of en_US
-    [dateFormatter setDateFormat:@"dd.MM.yyyy HH:mm:ss"]; //desired format
+    [dateFormatter setDateFormat:@"dd.MM.yyyy"]; //desired format
     
     
     

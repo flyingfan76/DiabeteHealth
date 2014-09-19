@@ -11,7 +11,7 @@
 
 
 
-@interface CFMedicalRecordTableTableViewController : UITableViewController
+@interface CFMedicalRecordTableTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;

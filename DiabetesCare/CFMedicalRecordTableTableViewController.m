@@ -35,6 +35,30 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 381, 320, 20)];
+    UILabel *labelView = [[UILabel alloc] initWithFrame:CGRectMake(10, 2, 300, 16)];
+    
+    int count = 0;
+    NSArray * sections = [self.fetchedResultsController sections];
+    if (sections){
+        id sectionInfo = [sections objectAtIndex:0];
+        if(sectionInfo){
+            count =  [sectionInfo numberOfObjects];
+        }
+    }
+
+    
+    labelView.text = [NSString stringWithFormat:NSLocalizedString(@"Total %d records",nil),count];
+    labelView.tag = 101;
+    labelView.textAlignment = NSTextAlignmentCenter;
+    labelView.backgroundColor =  [UIColor colorWithRed:122.0f/255.0f
+                                                     green:122.0f/255.0f
+                                                      blue:122.0f/255.0f
+                                                     alpha:1.0f];
+    [headerView addSubview:labelView];
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,10 +77,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSArray *sections = [self.fetchedResultsController sections];
-    if (sections)
-    {
-        return [sections count];
+    NSArray * sections = [self.fetchedResultsController sections];
+    if (sections){
+        id sectionInfo = [sections objectAtIndex:section];
+        if(sectionInfo){
+            return [sectionInfo numberOfObjects];
+        }
     }
     return 1;
 }
@@ -64,7 +90,13 @@
 
 - (void)configureCell:(CFMedicalRecordTableCellViewTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     HistoryMedicalRecord *info =  [_fetchedResultsController objectAtIndexPath:indexPath];
-    cell.myMedicalTime.text = @"temporary";
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd.MM.yyyy"];
+    
+    
+    NSString *stringFromDate = [formatter stringFromDate:info.date];
+    cell.myMedicalTime.text = stringFromDate;
  
 }
 
@@ -103,14 +135,14 @@
 }
 
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+
 
 /*
 // Override to support editing the table view.
@@ -199,9 +231,84 @@
 	    NSLog(@"Core data error %@, %@", error, [error userInfo]);
 	    abort();
 	}
-    //_fetchedResultsController.delegate = self;
+    _fetchedResultsController.delegate = self;
     
     return _fetchedResultsController;
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    
+    UITableView *tableView = self.tableView;
+    
+    switch(type) {
+            
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            [tableView deleteRowsAtIndexPaths:[NSArray
+                                               arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:[NSArray
+                                               arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id )sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    
+    switch(type) {
+            
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    // The fetch controller is about to start sending change notifications, so prepare the table view for updates.
+    [self.tableView beginUpdates];
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    // The fetch controller has sent all current change notifications, so tell the table view to process all updates.
+    [self.tableView endUpdates];
+    
+    [self updateTableHeader];
+    
+    
+}
+
+- (void) updateTableHeader {
+    
+    int count = 0;
+    NSArray * sections = [self.fetchedResultsController sections];
+    if (sections){
+        id sectionInfo = [sections objectAtIndex:0];
+        if(sectionInfo){
+            count =  [sectionInfo numberOfObjects];
+        }
+    }
+    
+    UILabel *textView = (UILabel*)[self.tableView.tableHeaderView viewWithTag:101];
+    
+
+    
+    textView.text = [NSString stringWithFormat:NSLocalizedString(@"Total %d records",nil),count];
 }
 
 
