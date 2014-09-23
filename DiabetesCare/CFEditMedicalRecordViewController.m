@@ -18,6 +18,7 @@
 
 @implementation CFEditMedicalRecordViewController {
     int deleteImg;
+    int selectedItem;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,6 +32,7 @@
 
 - (void)viewDidLoad
 {
+    selectedItem = 0;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -133,6 +135,12 @@
     // Pass the selected object to the new view controller.
     if( [[segue identifier] isEqualToString:@"addPhoto"]){
         CFDisplaySinglePictureViewController *destinationController = [segue destinationViewController];
+        destinationController.displayMode = 0;
+        destinationController.delegate = self;
+    } else if ( [[segue identifier] isEqualToString:@"showPhoto"]){
+        CFDisplaySinglePictureViewController *destinationController = [segue destinationViewController];
+        destinationController.displayMode = 1;
+        destinationController.imageTobeDisplay = [self.images objectAtIndex:selectedItem];
         destinationController.delegate = self;
     }
 
@@ -181,7 +189,8 @@
         [self.myCollectionView deselectItemAtIndexPath:indexPath animated:YES];
         
     }else{
-        [self performSegueWithIdentifier:@"addPhoto" sender:self];
+        [self performSegueWithIdentifier:@"showPhoto" sender:self];
+        selectedItem = indexPath.row;
         [self.myCollectionView deselectItemAtIndexPath:indexPath animated:YES];
 
     }

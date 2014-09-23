@@ -28,19 +28,19 @@
 {
     CFMenuTableViewCellContent *diaryToday = [[CFMenuTableViewCellContent alloc] init];
     diaryToday.menuLabel = NSLocalizedString(@"Personal Diaries", nil);
-    diaryToday.logoFileName = @"diarytoday.png";
+    diaryToday.logoFileName = @"diary1.png";
     
     CFMenuTableViewCellContent *diaryHistory = [[CFMenuTableViewCellContent alloc] init];
     diaryHistory.menuLabel = NSLocalizedString(@"History Overview", nil);
-    diaryHistory.logoFileName = @"diaryhistory.png";
+    diaryHistory.logoFileName = @"clinic3.png";
 
     CFMenuTableViewCellContent *recommendFood = [[CFMenuTableViewCellContent alloc] init];
     recommendFood.menuLabel = NSLocalizedString(@"RecommendFood",nil);
-    recommendFood.logoFileName = @"food.png";
+    recommendFood.logoFileName = @"hot.png";
 
     CFMenuTableViewCellContent *network = [[CFMenuTableViewCellContent alloc] init];
     network.menuLabel = NSLocalizedString(@"Doctor Records",nil);
-    network.logoFileName = @"drRecord.jpeg";
+    network.logoFileName = @"surgeon1.png";
     
     menuContents = [NSArray arrayWithObjects: diaryToday,diaryHistory,recommendFood,network, nil];
 }

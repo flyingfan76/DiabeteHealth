@@ -37,6 +37,8 @@
     // Do any additional setup after loading the view.
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.myDetailTableView.bounces = YES;
+    self.myDetailTableView.scrollEnabled = YES;
     self.myWebView.scrollView.scrollEnabled = NO;
     self.myWebView.scrollView.bounces = NO;
     self.myWebView.userInteractionEnabled = NO;
@@ -150,10 +152,10 @@
     cell.myDatePicker.text = stringFromDate;
     
     if ([info.type intValue] == 0 ){
-        UIImage *newImage = [UIImage imageNamed:@"before.jpeg"];
+        UIImage *newImage = [UIImage imageNamed:@"plate13.png"];
         [cell.myTime setImage:newImage];
     }else if ([info.type intValue] == 1 ){
-        UIImage *newImage = [UIImage imageNamed:@"after.jpeg"];
+        UIImage *newImage = [UIImage imageNamed:@"cutlery6.png"];
         [cell.myTime setImage:newImage];
     }
     

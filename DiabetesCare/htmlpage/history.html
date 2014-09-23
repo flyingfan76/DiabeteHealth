@@ -15,8 +15,9 @@ $(function () {
     
     window.sugar = new Highcharts.StockChart({
             chart: {
-                renderTo: 'bloodSugar',
+                renderTo: 'Glycemia',
                 zoomType: 'x',
+                backgroundColor: '#F7F7F7',
                 type:'spline'
                                             
             },
@@ -67,7 +68,7 @@ $(function () {
             },
                                              
             title: {
-                text: 'Blood Sugar'
+                text: 'Glycemia'
             },
             
             plotOptions: {
@@ -95,8 +96,9 @@ $(function () {
 
    window.pressure = new Highcharts.StockChart({
             chart: {
-                renderTo: 'bloodPressure',
+                renderTo: 'BloodPressure',
                 zoomType: 'x',
+                backgroundColor: '#F7F7F7',
                                                type:'spline'
                                             
             },
@@ -148,7 +150,7 @@ $(function () {
 
 
             title: {
-                text: 'Blood Sugar'
+                text: 'Blood Pressure'
             },
                                                
                                                plotOptions: {
@@ -222,7 +224,7 @@ $(function () {
     </script>
 </head>
 <body>
-<div id="bloodSugar" style="width:auto; height:700px;margin: 0"></div>
-<div id="bloodPressure" style="width:auto; height:700px;margin: 0"></div>
+<div id="Glycemia" style="width:auto; height:600px;margin: 0"></div>
+<div id="BloodPressure" style="width:auto; height:600px;margin: 0"></div>
 </body>
 </html>

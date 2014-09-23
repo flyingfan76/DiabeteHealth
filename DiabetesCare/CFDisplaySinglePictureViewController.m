@@ -28,24 +28,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    dirty = false;
-    // Do any additional setup after loading the view.
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    
+    if (self.displayMode == 0){
+        dirty = false;
+        // Do any additional setup after loading the view.
+        if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            
+            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error",nil)
+                                                                  message:NSLocalizedString(@"Device has no camera",nil)
+                                                                 delegate:nil
+                                                        cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                        otherButtonTitles: nil];
+            
+            [myAlertView show];
+            
+        }
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error",nil)
-                                                              message:NSLocalizedString(@"Device has no camera",nil)
-                                                             delegate:nil
-                                                    cancelButtonTitle:NSLocalizedString(@"OK", nil)
-                                                    otherButtonTitles: nil];
+        self.saveBtn.enabled = false;
         
-        [myAlertView show];
+        [self.takePhoto setTitle:NSLocalizedString(@"Take Photo",nil) forState:UIControlStateNormal];
+        [self.choseBtn setTitle:NSLocalizedString(@"Select Photo", nil) forState:UIControlStateNormal];
+    }else{
+        self.takePhoto.hidden = YES;
+        self.choseBtn.hidden = YES;
+        dirty = false;
+        self.saveBtn.enabled = false;
         
+        if (self.imageTobeDisplay){
+            [self.imageView setImage:self.imageTobeDisplay];
+        }
     }
-    
-    self.saveBtn.enabled = false;
-    
-    [self.takePhoto setTitle:NSLocalizedString(@"Take Photo",nil) forState:UIControlStateNormal];
-    [self.choseBtn setTitle:NSLocalizedString(@"Select Photo", nil) forState:UIControlStateNormal];
+
     
 }
 

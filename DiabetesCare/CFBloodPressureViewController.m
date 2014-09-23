@@ -37,6 +37,7 @@
     // Do any additional setup after loading the view.
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.myDetailTableView.bounces = YES;
     self.myWebView.scrollView.scrollEnabled = NO;
     self.myWebView.scrollView.bounces = NO;
     
@@ -145,7 +146,7 @@
     [formatter setDateFormat:@"HH:mm:ss"];
 
 
-    UIImage *newImage = [UIImage imageNamed:@"bloodpressure.jpeg"];
+    UIImage *newImage = [UIImage imageNamed:@"blood14.png"];
     [cell.imageView setImage:newImage];
     
     //Optionally for time zone converstions

@@ -29,4 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *choseBtn;
 @property (weak, nonatomic) IBOutlet UIButton *takePhoto;
 
+@property int displayMode;
+@property (weak,nonatomic) UIImage *imageTobeDisplay;
+
 @end
