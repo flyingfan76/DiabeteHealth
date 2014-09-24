@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
 @class CFDisplaySinglePictureViewController;
 
@@ -14,7 +15,7 @@
 - (void) addSinglePictureViewController:(UIImage *)image;
 @end
 
-@interface CFDisplaySinglePictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> 
+@interface CFDisplaySinglePictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,ADBannerViewDelegate>
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;
 

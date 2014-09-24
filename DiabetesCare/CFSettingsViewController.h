@@ -8,6 +8,6 @@
 
 #import "IASKAppSettingsViewController.h"
 
-@interface CFSettingsViewController : IASKAppSettingsViewController<IASKSettingsDelegate,UITextViewDelegate>
+@interface CFSettingsViewController : IASKAppSettingsViewController
 
 @end

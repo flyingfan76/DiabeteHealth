@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
+#import <iAd/iAd.h>
 
-@interface RecipeDetailViewController : UIViewController
+@interface RecipeDetailViewController : UIViewController<ADBannerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;

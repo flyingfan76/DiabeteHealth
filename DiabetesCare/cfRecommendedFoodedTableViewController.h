@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface cfRecommendedFoodedTableViewController : UITableViewController
+@interface cfRecommendedFoodedTableViewController : UITableViewController<ADBannerViewDelegate>
 
 
 @end

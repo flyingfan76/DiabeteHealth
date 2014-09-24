@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface CFBMIViewController : UIViewController
+@interface CFBMIViewController : UIViewController<ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 

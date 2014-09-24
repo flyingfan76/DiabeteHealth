@@ -10,7 +10,9 @@
 
 #import <CoreData/CoreData.h>
 
-@interface CFRootViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+#import <iAd/iAd.h>
+
+@interface CFRootViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 

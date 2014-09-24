@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "HistoryMedicalRecord.h"
+#import <iAd/iAd.h>
 
-@interface CFEditMedicalRecordViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIActionSheetDelegate>
+@interface CFEditMedicalRecordViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 @property (weak, nonatomic) IBOutlet UITextField *medicalTime;

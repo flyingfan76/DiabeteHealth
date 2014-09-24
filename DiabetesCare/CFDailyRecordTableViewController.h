@@ -11,9 +11,10 @@
 #import <CoreData/CoreData.h>
 #import "CFKPIViewController.h"
 #import "CFBloodPressureViewController.h"
+#import <iAd/iAd.h>
 
 
-@interface CFDailyRecordTableViewController : UITableViewController <TKCalendarMonthViewDelegate,CFKPIViewControllerDelegate,CFBloodPressureViewControllerDelegate>
+@interface CFDailyRecordTableViewController : UITableViewController <TKCalendarMonthViewDelegate,CFKPIViewControllerDelegate,CFBloodPressureViewControllerDelegate,ADBannerViewDelegate>
 
 
 

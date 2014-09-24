@@ -30,7 +30,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.69999999999999996" tag="101" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aKA-qD-oWp">
-                                <rect key="frame" x="5" y="295" width="310" height="180"/>
+                                <rect key="frame" x="5" y="248" width="310" height="180"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
@@ -92,7 +92,7 @@
                             <constraint firstItem="de5-yE-1pN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="25" id="I1P-2s-Ueu"/>
                             <constraint firstItem="aKA-qD-oWp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="5" id="Iho-Gw-69K"/>
                             <constraint firstAttribute="width" secondItem="de5-yE-1pN" secondAttribute="width" id="Ok7-wr-VYt"/>
-                            <constraint firstItem="dUG-p8-P0W" firstAttribute="top" secondItem="aKA-qD-oWp" secondAttribute="bottom" constant="5" id="Xiv-AG-TAO"/>
+                            <constraint firstItem="dUG-p8-P0W" firstAttribute="top" secondItem="aKA-qD-oWp" secondAttribute="bottom" constant="52" id="Xiv-AG-TAO"/>
                             <constraint firstAttribute="bottom" secondItem="de5-yE-1pN" secondAttribute="bottom" id="m7j-qc-lej"/>
                             <constraint firstAttribute="trailing" secondItem="aKA-qD-oWp" secondAttribute="trailing" constant="5" id="qvS-FV-Jb1"/>
                         </constraints>

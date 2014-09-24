@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <iAd/iAd.h>
 
 
 
-@interface CFMedicalRecordTableTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface CFMedicalRecordTableTableViewController : UITableViewController <NSFetchedResultsControllerDelegate,ADBannerViewDelegate>
 
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;

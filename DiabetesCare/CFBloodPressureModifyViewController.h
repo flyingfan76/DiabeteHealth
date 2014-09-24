@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TodayRecord.h"
+#import <iAd/iAd.h>
 
-@interface CFBloodPressureModifyViewController : UIViewController<UITextFieldDelegate>
+@interface CFBloodPressureModifyViewController : UIViewController<UITextFieldDelegate,ADBannerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *myDateTime;

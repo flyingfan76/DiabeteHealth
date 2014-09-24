@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TapkuLibrary/TapkuLibrary.h"
 #import <CoreData/CoreData.h>
+#import <iAd/iAd.h>
 
 @class CFKPIViewController;
 
@@ -16,7 +17,7 @@
 - (void)DidBack:(CFKPIViewController *)controller;
 @end
 
-@interface CFKPIViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate>
+@interface CFKPIViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate,ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 

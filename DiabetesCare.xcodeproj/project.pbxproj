@@ -67,7 +67,6 @@
 		6E5942D719D14A7600AA0CEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E5942D619D14A7600AA0CEF /* Settings.bundle */; };
 		6E5942DB19D14D4900AA0CEF /* CFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5942DA19D14D4900AA0CEF /* CFSettingsViewController.m */; };
 		6E5942DF19D1509D00AA0CEF /* Settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5942DE19D1509D00AA0CEF /* Settings-icon.png */; };
-		6E5942E219D1545500AA0CEF /* CustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5942E119D1545500AA0CEF /* CustomViewCell.m */; };
 		6E71915B19C68B9500BEB144 /* cfString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E71915D19C68B9500BEB144 /* cfString.strings */; };
 		6EA977621985F19300DA9B9A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA977611985F19300DA9B9A /* CoreData.framework */; };
 		6EA978321989E23900DA9B9A /* CFGlycemiaModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA978311989E23900DA9B9A /* CFGlycemiaModifyViewController.m */; };
@@ -98,6 +97,7 @@
 		6EA97871199233E800DA9B9A /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97859199233E800DA9B9A /* RecipeTableCell.m */; };
 		6EA97872199233E800DA9B9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785B199233E800DA9B9A /* about.html */; };
 		6EA97873199233E800DA9B9A /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785C199233E800DA9B9A /* about.jpg */; };
+		6EA9F31E19D2A4450030490F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9F31D19D2A4450030490F /* iAd.framework */; };
 		6EB4BAEB196BE89600073FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEA196BE89600073FA5 /* Foundation.framework */; };
 		6EB4BAED196BE89700073FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEC196BE89700073FA5 /* CoreGraphics.framework */; };
 		6EB4BAEF196BE89700073FA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEE196BE89700073FA5 /* UIKit.framework */; };
@@ -251,8 +251,6 @@
 		6E5942D919D14D4900AA0CEF /* CFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSettingsViewController.h; sourceTree = "<group>"; };
 		6E5942DA19D14D4900AA0CEF /* CFSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSettingsViewController.m; sourceTree = "<group>"; };
 		6E5942DE19D1509D00AA0CEF /* Settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-icon.png"; sourceTree = "<group>"; };
-		6E5942E019D1545500AA0CEF /* CustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewCell.h; sourceTree = "<group>"; };
-		6E5942E119D1545500AA0CEF /* CustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewCell.m; sourceTree = "<group>"; };
 		6E71915619C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
 		6E71915819C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		6E71915919C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -297,6 +295,7 @@
 		6EA9785C199233E800DA9B9A /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		6EA978781993524900DA9B9A /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
 		6EA97948199B0EC200DA9B9A /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = "tapkulibrary-master/src/TapkuLibrary.xcodeproj"; sourceTree = "<group>"; };
+		6EA9F31D19D2A4450030490F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		6EB4BAE7196BE89600073FA5 /* DiabetesCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB4BAEA196BE89600073FA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6EB4BAEC196BE89700073FA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -347,6 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA9F31E19D2A4450030490F /* iAd.framework in Frameworks */,
 				6EDB47E5199B126F00BCF1C3 /* libTapkuLibrary.a in Frameworks */,
 				6EA977621985F19300DA9B9A /* CoreData.framework in Frameworks */,
 				6EB4BAED196BE89700073FA5 /* CoreGraphics.framework in Frameworks */,
@@ -556,8 +556,6 @@
 			children = (
 				6E5942D919D14D4900AA0CEF /* CFSettingsViewController.h */,
 				6E5942DA19D14D4900AA0CEF /* CFSettingsViewController.m */,
-				6E5942E019D1545500AA0CEF /* CustomViewCell.h */,
-				6E5942E119D1545500AA0CEF /* CustomViewCell.m */,
 			);
 			name = settingView;
 			sourceTree = "<group>";
@@ -727,6 +725,7 @@
 		6EB4BAE9196BE89600073FA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EA9F31D19D2A4450030490F /* iAd.framework */,
 				6EA977611985F19300DA9B9A /* CoreData.framework */,
 				6EB4BAEA196BE89600073FA5 /* Foundation.framework */,
 				6EB4BAEC196BE89700073FA5 /* CoreGraphics.framework */,
@@ -1067,7 +1066,6 @@
 				6E3E572A19779E4D000398CD /* cfAjaxURLProtocol.m in Sources */,
 				6ECD415C1974FF3C009C6BD1 /* CFDailyRecordTableViewController.m in Sources */,
 				6E25487319AC5B1800D4F59A /* CFEditMedicalRecordViewController.m in Sources */,
-				6E5942E219D1545500AA0CEF /* CustomViewCell.m in Sources */,
 				6E5942CF19D149AA00AA0CEF /* IASKSpecifier.m in Sources */,
 				6E25487D19AC615900D4F59A /* CFMedicalRecordCollectionViewCell.m in Sources */,
 				6EA97870199233E800DA9B9A /* RecipeDetailViewController.m in Sources */,
