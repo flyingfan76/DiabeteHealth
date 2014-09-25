@@ -12,6 +12,15 @@ $(function () {
     
     var enddata = new Date().getTime() + 7*24*3600*1000;
     var startDate = new Date(2014,01,01);
+
+    function hideZoomBar(chart) {
+        chart.rangeSelector.zoomText.hide();
+        $.each(chart.rangeSelector.buttons, function () {
+            this.hide();
+        });
+        $(chart.rangeSelector.divRelative).hide();
+    };
+
     
     window.sugar = new Highcharts.StockChart({
             chart: {
@@ -21,6 +30,7 @@ $(function () {
                 type:'spline'
                                             
             },
+
 
             rangeSelector: {
                 buttons: [{
@@ -43,16 +53,26 @@ $(function () {
                 selected : 3 // all
             },
                                              
-            scrollbar: {
-                liveRedraw: false,
-                enabled : false
-            },
+            // scrollbar: {
+            //     liveRedraw: false,
+            //     enabled : false
+            // },
 
             xAxis: {
+                type: 'datetime',
                 ordinal : false,
                 min: startDate,
                 minRange: 24 * 3600 * 1000, // one hour
-                max: enddata
+                minTickInterval: 7 * 24 * 3600 * 1000,
+                tickInterval: 7 * 24 * 3600 * 1000,
+                tickPixelInterval: 300,
+                max: enddata,
+                startOnTick:true,
+            },
+
+            yAxis: {
+                min: 35,
+                max: 200,
             },
                                              
             navigator : {
@@ -60,7 +80,7 @@ $(function () {
                  series : {
                     data : sugardata
                  },
-                 enabled : false
+                 enabled : true
             },
                                              
             tooltip: {
@@ -89,6 +109,7 @@ $(function () {
             }]
         });
 
+    hideZoomBar(window.sugar);
 
     var pressuredata = [
         [1407081600000, 100]
@@ -135,6 +156,11 @@ $(function () {
                 minRange: 24 * 3600 * 1000, // one hour
                 max: enddata
             },
+
+            yAxis: {
+                min: 35,
+                max: 200,
+            },
                                              
             navigator : {
                  adaptToUpdatedData: true,
@@ -174,6 +200,8 @@ $(function () {
 
 
     });
+
+    hideZoomBar(window.pressure);
   
     
     function clearSugar() {

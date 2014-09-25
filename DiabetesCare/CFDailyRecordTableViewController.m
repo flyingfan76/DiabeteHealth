@@ -168,7 +168,7 @@
 
 - (double) calculateBMI{
 
-    ProfileMasterData* myUser = [(cfAppDelegate *)[[UIApplication sharedApplication] delegate] currentUser];//Code for getting current user
+   // ProfileMasterData* myUser = [(cfAppDelegate *)[[UIApplication sharedApplication] delegate] currentUser];//Code for getting current user
     
     NSNumber *bmi = [[NSNumber alloc] initWithDouble:30];
     

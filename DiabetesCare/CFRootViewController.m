@@ -24,8 +24,9 @@
 {
     NSArray * menuContents;
 
-    BOOL _bannerIsVisible;
+    BOOL _bannerIsVisible;  //only mean adbanner
     ADBannerView *_adBanner;
+    GADBannerView *_admobBannerView;
 
 }
 
@@ -113,8 +114,31 @@
         
         [UIView commitAnimations];
         
+        [_adBanner removeFromSuperview];
+        
         _bannerIsVisible = NO;
+        
     }
+    
+    _admobBannerView = [[GADBannerView alloc]
+                        initWithFrame:CGRectMake(0.0,0.0,
+                                                 GAD_SIZE_320x50.width,
+                                                 GAD_SIZE_320x50.height)];
+    
+    // 3
+    _admobBannerView.adUnitID = @"a14ec3f0a2028f2";
+    _admobBannerView.rootViewController = self;
+    _admobBannerView.delegate = self;
+    
+    // 4
+    [self.view addSubview:_admobBannerView];
+    [_admobBannerView loadRequest:[GADRequest request]];
+    
+    
+}
+
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
+    [_admobBannerView removeFromSuperview];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

@@ -230,7 +230,7 @@
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CFMedicalRecordCollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    //CFMedicalRecordCollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     
     if (indexPath.row + 1 == [self.images count]) {
         

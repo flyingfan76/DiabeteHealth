@@ -361,7 +361,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self configureCell:(CFBloodPressureTableCell *)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:
@@ -625,7 +625,7 @@
         int countOfObjects = 0;
         for (int i = 0; i<[allPoints count]; i++) {
             TodayRecord *o = [allPoints objectAtIndex:i];
-            if ( [o.type isEqual:[NSNumber numberWithInt:0]] ){
+            if ( [o.type isEqual:[NSNumber numberWithInt:2]] ){
                 total = [NSNumber numberWithFloat:([total floatValue] + [o.value floatValue])];
                 countOfObjects++;
             }

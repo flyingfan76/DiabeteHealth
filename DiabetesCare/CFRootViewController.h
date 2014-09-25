@@ -11,8 +11,9 @@
 #import <CoreData/CoreData.h>
 
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface CFRootViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,ADBannerViewDelegate>
+@interface CFRootViewController : UIViewController<UITableViewDelegate, UITableViewDataSource,ADBannerViewDelegate,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 

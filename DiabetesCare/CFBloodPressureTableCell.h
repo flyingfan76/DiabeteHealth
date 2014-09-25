@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *sampleTime;
 @property (weak, nonatomic) IBOutlet UILabel *sampleValue;
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+//@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
 
 @end
