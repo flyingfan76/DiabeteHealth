@@ -9,12 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
 
 
-@interface CFMedicalRecordTableTableViewController : UITableViewController <NSFetchedResultsControllerDelegate,ADBannerViewDelegate>
+@interface CFMedicalRecordTableTableViewController : UITableViewController <NSFetchedResultsControllerDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

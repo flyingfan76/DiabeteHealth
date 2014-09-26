@@ -10,6 +10,8 @@
 #import "TapkuLibrary/TapkuLibrary.h"
 #import <CoreData/CoreData.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
+
 
 @class CFKPIViewController;
 
@@ -17,7 +19,7 @@
 - (void)DidBack:(CFKPIViewController *)controller;
 @end
 
-@interface CFKPIViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate,ADBannerViewDelegate>
+@interface CFKPIViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 
@@ -30,6 +32,9 @@
 @property (nonatomic, weak) id <CFKPIViewControllerDelegate> delegate;
 
 //@property (weak, nonatomic) IBOutlet UIDatePicker *myDatePicker;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 
 

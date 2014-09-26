@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "TodayRecord.h"
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface CFBloodPressureModifyViewController : UIViewController<UITextFieldDelegate,ADBannerViewDelegate>
+@interface CFBloodPressureModifyViewController : UIViewController<UITextFieldDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *myDateTime;
@@ -24,6 +25,10 @@
 
 @property (nonatomic,retain) UIView *inputAccView;
 @property (nonatomic,retain) UIDatePicker *inputView;
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 
 @end

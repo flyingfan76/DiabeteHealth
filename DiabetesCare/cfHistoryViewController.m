@@ -15,8 +15,7 @@
 @end
 
 @implementation cfHistoryViewController{
-    BOOL _bannerIsVisible;
-    ADBannerView *_adBanner;
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,13 +32,55 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.myWebView.delegate = self;
-    //[NSURLProtocol registerClass:[cfAjaxURLProtocol class]];
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"html"];
-    NSURL *instructionsURL = [NSURL fileURLWithPath:htmlFile];
-    self.myWebView.scrollView.scrollEnabled = TRUE;
-    self.myWebView.scalesPageToFit = TRUE;
-	[self.myWebView loadRequest:[NSURLRequest requestWithURL:instructionsURL]];
+//    self.myWebView.delegate = self;
+//    //[NSURLProtocol registerClass:[cfAjaxURLProtocol class]];
+//    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"html"];
+//    NSURL *instructionsURL = [NSURL fileURLWithPath:htmlFile];
+//    self.myWebView.scrollView.scrollEnabled = TRUE;
+//    self.myWebView.scalesPageToFit = TRUE;
+//	[self.myWebView loadRequest:[NSURLRequest requestWithURL:instructionsURL]];
+    
+    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.hud.labelText = NSLocalizedString(@"Loading graph data...", nil);
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSDate *startDate = [NSDate dateWithTimeIntervalSince1970: 1351036800];
+        NSDate *endDate = [NSDate date];
+        
+        NSArray *graphObjects = [NSArray arrayWithArray: [GraphDataObject randomGraphDataObjectsArray:2000 startDate:startDate endDate:endDate]];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if([graphObjects count] > 0){
+                
+                self.graphView = [[GraphView alloc] initWithFrame:DEFAULT_GRAPH_VIEW_FRAME objectsArray:graphObjects startDate:startDate endDate:endDate delegate:self];
+                
+                
+                [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+                
+                // Assumes the banner view is just off the bottom of the screen.
+                self.graphView.frame = CGRectOffset(self.graphView.frame, 0, +64);
+                
+                [UIView commitAnimations];
+                
+                
+                [self.view insertSubview:self.graphView atIndex:0];
+            }
+        });
+    });
+
+    
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    [self.bannerView setDelegate:self];
+    [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+    
+    // Assumes the banner view is just off the bottom of the screen.
+    self.bannerView.frame = CGRectOffset(self.bannerView.frame, 0, -self.bannerView.frame.size.height);
+    
+    [UIView commitAnimations];
+    
+    [self.view addSubview:self.bannerView];
 }
 
 
@@ -47,48 +88,65 @@
 {
     [super viewDidAppear:animated];
     
-    _adBanner = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
-    _adBanner.delegate = self;
+
 }
 
+- (void)graphViewDidUpdate:(GraphView *)view{
+    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    self.hud = nil;
+}
 
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    if (!_bannerIsVisible)
-    {
-        // If banner isn't part of view hierarchy, add it
-        if (_adBanner.superview == nil)
-        {
-            [self.view addSubview:_adBanner];
-        }
+- (void)graphViewWillUpdate:(GraphView *)view{
+    
+    if(!self.hud){
         
-        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
-        
-        // Assumes the banner view is just off the bottom of the screen.
-        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
-        
-        [UIView commitAnimations];
-        
-        _bannerIsVisible = YES;
+        self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        self.hud.labelText = NSLocalizedString(@"Loading graph data...", @"");
     }
 }
+
 
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
     NSLog(@"Failed to retrieve ad");
     
-    if (_bannerIsVisible)
-    {
-        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
-        
-        // Assumes the banner view is placed at the bottom of the screen.
-        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
-        
-        [UIView commitAnimations];
-        
-        _bannerIsVisible = NO;
-    }
+    [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+    
+    // Assumes the banner view is placed at the bottom of the screen.
+    self.bannerView.frame = CGRectOffset(self.bannerView.frame, 0, self.bannerView.frame.size.height);
+    
+    [UIView commitAnimations];
+    
+    
+    [self.bannerView removeFromSuperview];
+    
+    
+    
+    _admobBannerView = [[GADBannerView alloc]
+                        initWithFrame:CGRectMake(0.0,0.0,
+                                                 GAD_SIZE_320x50.width,
+                                                 GAD_SIZE_320x50.height)];
+    
+    // 3
+    self.admobBannerView.adUnitID = @"a14ec3f0a2028f2";  //to be change
+    self.admobBannerView.rootViewController = self;
+    self.admobBannerView.delegate = self;
+    [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+    
+    // Assumes the banner view is just off the bottom of the screen.
+    self.admobBannerView.frame = CGRectOffset(self.admobBannerView.frame, 0, -self.admobBannerView.frame.size.height);
+    
+    [UIView commitAnimations];
+    // 4
+    [self.view addSubview:self.admobBannerView];
+    [self.admobBannerView loadRequest:[GADRequest request]];
+}
+
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
+    [self.admobBannerView removeFromSuperview];
 }
 
 
@@ -301,32 +359,32 @@
 
 
 #pragma mark - UIWebViewDelegate
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    NSData *jsonObj = [self generateOnePreSugarSeries];
-    NSString *jsonString1 = [[NSString alloc] initWithData:jsonObj encoding:NSUTF8StringEncoding];
-    NSString *jsonString = [jsonString1 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    
-    
-    NSData *jsonAObj = [self generateOneAfterSugarSeries];
-    NSString *jsonString2 = [[NSString alloc] initWithData:jsonAObj encoding:NSUTF8StringEncoding];
-    NSString *jsonStringA = [jsonString2 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    
-    NSString *updateFunction=[[NSString alloc] initWithFormat:@"updateSugarData('%@','%@')",jsonString,jsonStringA];
-    
-    
-    [self.myWebView stringByEvaluatingJavaScriptFromString:updateFunction];
-    
-    
-    NSData *jsonP = [self generateOneAfterSugarSeries];
-    NSString *jsonString2P = [[NSString alloc] initWithData:jsonP encoding:NSUTF8StringEncoding];
-    NSString *jsonStringP = [jsonString2P stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    
-    NSString *updateFunctionP =[[NSString alloc] initWithFormat:@"updatePressureData('%@')",jsonStringP];
-    
-     [self.myWebView stringByEvaluatingJavaScriptFromString:updateFunctionP];
-    
-    
-}
+//- (void)webViewDidFinishLoad:(UIWebView *)webView{
+//    NSData *jsonObj = [self generateOnePreSugarSeries];
+//    NSString *jsonString1 = [[NSString alloc] initWithData:jsonObj encoding:NSUTF8StringEncoding];
+//    NSString *jsonString = [jsonString1 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//    
+//    
+//    NSData *jsonAObj = [self generateOneAfterSugarSeries];
+//    NSString *jsonString2 = [[NSString alloc] initWithData:jsonAObj encoding:NSUTF8StringEncoding];
+//    NSString *jsonStringA = [jsonString2 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//    
+//    NSString *updateFunction=[[NSString alloc] initWithFormat:@"updateSugarData('%@','%@')",jsonString,jsonStringA];
+//    
+//    
+//    [self.myWebView stringByEvaluatingJavaScriptFromString:updateFunction];
+//    
+//    
+//    NSData *jsonP = [self generateOneAfterSugarSeries];
+//    NSString *jsonString2P = [[NSString alloc] initWithData:jsonP encoding:NSUTF8StringEncoding];
+//    NSString *jsonStringP = [jsonString2P stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//    
+//    NSString *updateFunctionP =[[NSString alloc] initWithFormat:@"updatePressureData('%@')",jsonStringP];
+//    
+//     [self.myWebView stringByEvaluatingJavaScriptFromString:updateFunctionP];
+//    
+//    
+//}
 
 
 #pragma mark - fetchResultsController
@@ -499,16 +557,16 @@
 
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-    [self updateWebView];
+//    [self updateWebView];
     
 }
 
-- (void) updateWebView{
-    
-    
-    [self.myWebView  stopLoading ];
-    [self.myWebView  reload];
-    
-}
+//- (void) updateWebView{
+//    
+//    
+//    [self.myWebView  stopLoading ];
+//    [self.myWebView  reload];
+//    
+//}
 
 @end

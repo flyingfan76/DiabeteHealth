@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "HistoryMedicalRecord.h"
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface CFEditMedicalRecordViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,ADBannerViewDelegate>
+@interface CFEditMedicalRecordViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 @property (weak, nonatomic) IBOutlet UITextField *medicalTime;
@@ -28,5 +29,9 @@
 
 
 @property (strong,nonatomic) NSMutableArray *images;
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

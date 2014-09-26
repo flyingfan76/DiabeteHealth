@@ -17,6 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 
-//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

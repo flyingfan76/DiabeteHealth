@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
 @class CFDisplaySinglePictureViewController;
 
@@ -15,7 +16,7 @@
 - (void) addSinglePictureViewController:(UIImage *)image;
 @end
 
-@interface CFDisplaySinglePictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,ADBannerViewDelegate>
+@interface CFDisplaySinglePictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;
 
@@ -32,5 +33,11 @@
 
 @property int displayMode;
 @property (weak,nonatomic) UIImage *imageTobeDisplay;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelBtn;
+
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

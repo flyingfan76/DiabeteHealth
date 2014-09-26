@@ -9,11 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface cfHistoryViewController : UIViewController<UIWebViewDelegate,ADBannerViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *myWebView;
+#import "GraphDataObject.h"
+#import "GraphView.h"
+#import "MBProgressHUD.h"
+
+@interface cfHistoryViewController : UIViewController<UIWebViewDelegate,ADBannerViewDelegate,GADBannerViewDelegate,GraphViewDelegate>
+//@property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedPreSugarResultsController;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedAfterSugarResultsController;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedPressureResultsController;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
+
+@property (nonatomic, strong) GraphView *graphView;
+@property (nonatomic, strong) MBProgressHUD *hud;
 
 @end

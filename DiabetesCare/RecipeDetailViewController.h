@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface RecipeDetailViewController : UIViewController<ADBannerViewDelegate>
+
+@interface RecipeDetailViewController : UIViewController<ADBannerViewDelegate,GADBannerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
@@ -19,5 +21,9 @@
 @property (weak, nonatomic) IBOutlet UITextView *ingredientsTextView;
 
 @property (nonatomic, strong) Recipe *recipe;
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

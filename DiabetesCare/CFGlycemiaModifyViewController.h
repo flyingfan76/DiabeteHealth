@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "TodayRecord.h"
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface CFGlycemiaModifyViewController : UIViewController<UITextFieldDelegate,ADBannerViewDelegate>
+@interface CFGlycemiaModifyViewController : UIViewController<UITextFieldDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *myDateTime;
@@ -28,5 +29,8 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mySegmentedSelection;
 @property (weak, nonatomic) IBOutlet UILabel *sampleTime;
 @property (weak, nonatomic) IBOutlet UILabel *sampleValue;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

@@ -161,25 +161,9 @@
                     <view key="view" contentMode="scaleToFill" id="nkw-oq-K0S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZq-sA-ZBZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="XZq-sA-ZBZ" firstAttribute="height" secondItem="nkw-oq-K0S" secondAttribute="height" id="REJ-HL-cy2"/>
-                            <constraint firstAttribute="centerX" secondItem="XZq-sA-ZBZ" secondAttribute="centerX" id="So3-ZZ-9JL"/>
-                            <constraint firstItem="XZq-sA-ZBZ" firstAttribute="width" secondItem="nkw-oq-K0S" secondAttribute="width" id="cpi-j5-F0L"/>
-                            <constraint firstAttribute="centerY" secondItem="XZq-sA-ZBZ" secondAttribute="centerY" id="uOM-J0-gAs"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ESO-A6-xsd"/>
-                    <connections>
-                        <outlet property="myWebView" destination="XZq-sA-ZBZ" id="qDf-Yt-d74"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYu-uL-FET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +243,7 @@
             </objects>
             <point key="canvasLocation" x="-2" y="134"/>
         </scene>
-        <!--Medical Record Table Table View Controller - record-->
+        <!--Medical Record Table Table View Controller-->
         <scene sceneID="uBl-eU-SDx">
             <objects>
                 <tableViewController id="2vO-cX-XHW" customClass="CFMedicalRecordTableTableViewController" sceneMemberID="viewController">
@@ -294,7 +278,7 @@
                             <outlet property="delegate" destination="2vO-cX-XHW" id="4cR-Aj-kjn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="record" id="iFT-yY-YlB">
+                    <navigationItem key="navigationItem" id="iFT-yY-YlB">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="d8i-pk-a1y">
                             <connections>
                                 <segue destination="nfw-71-YkD" kind="modal" identifier="AddDetailMedicalSegue" id="a5D-Is-kUS"/>
@@ -386,7 +370,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="MP8-kG-Eb8">
+                                    <navigationItem id="MP8-kG-Eb8">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VKX-DN-zUY">
                                             <connections>
                                                 <action selector="cancel:" destination="nfw-71-YkD" id="lXN-05-4h9"/>
@@ -432,7 +416,7 @@
                                 <rect key="frame" x="0.0" y="26" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="EBP-Ok-Crh">
+                                    <navigationItem id="EBP-Ok-Crh">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Zns-T1-iZS">
                                             <connections>
                                                 <action selector="cancel:" destination="F5X-sN-Y9I" id="dFs-p6-S8O"/>
@@ -476,6 +460,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="cancelBtn" destination="Zns-T1-iZS" id="NT1-do-1p7"/>
                         <outlet property="choseBtn" destination="5VY-SX-JMh" id="9VQ-mc-H1f"/>
                         <outlet property="imageView" destination="jct-vc-CZq" id="IzO-UY-Rm9"/>
                         <outlet property="saveBtn" destination="Dmh-bu-rCq" id="I4U-cb-Oql"/>
@@ -1062,7 +1047,7 @@
                                 <rect key="frame" x="7" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="0ik-y3-Vmu">
+                                    <navigationItem id="0ik-y3-Vmu">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tJQ-BB-fcN">
                                             <connections>
                                                 <action selector="cancel:" destination="xvu-qt-NVw" id="bow-dg-uJy"/>
@@ -1242,7 +1227,7 @@
                                 <rect key="frame" x="0.0" y="21" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="cCz-Ge-KD9">
+                                    <navigationItem id="cCz-Ge-KD9">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gd2-t3-duw">
                                             <connections>
                                                 <action selector="cancel:" destination="7Ig-pP-xIy" id="6YD-hf-73b"/>

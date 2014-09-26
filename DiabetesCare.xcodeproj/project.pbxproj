@@ -24,6 +24,16 @@
 		6E3DFEBB19D405D700ACF40C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3DFEBA19D405D700ACF40C /* AudioToolbox.framework */; };
 		6E3DFEBD19D405E100ACF40C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3DFEBC19D405E100ACF40C /* MessageUI.framework */; };
 		6E3DFEBF19D405EE00ACF40C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3DFEBE19D405EE00ACF40C /* SystemConfiguration.framework */; };
+		6E3DFED919D5565A00ACF40C /* GraphDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFEC519D5565A00ACF40C /* GraphDataObject.m */; };
+		6E3DFEDA19D5565A00ACF40C /* GraphLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFEC719D5565A00ACF40C /* GraphLine.m */; };
+		6E3DFEDB19D5565A00ACF40C /* GraphPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFEC919D5565A00ACF40C /* GraphPoint.m */; };
+		6E3DFEDC19D5565A00ACF40C /* GraphScrollableArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFECB19D5565A00ACF40C /* GraphScrollableArea.m */; };
+		6E3DFEDD19D5565A00ACF40C /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFECD19D5565A00ACF40C /* GraphView.m */; };
+		6E3DFEDE19D5565A00ACF40C /* NSDate+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFECF19D5565A00ACF40C /* NSDate+Graph.m */; };
+		6E3DFEDF19D5565A00ACF40C /* UIBezierPath+Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED119D5565A00ACF40C /* UIBezierPath+Smoothing.m */; };
+		6E3DFEE019D5565A00ACF40C /* UIColor+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED319D5565A00ACF40C /* UIColor+Graph.m */; };
+		6E3DFEE119D5565A00ACF40C /* UIFont+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED519D5565A00ACF40C /* UIFont+Graph.m */; };
+		6E3DFEE219D5565A00ACF40C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */; };
 		6E3E571919762E90000398CD /* CFBMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571819762E90000398CD /* CFBMIViewController.m */; };
 		6E3E571B197632BB000398CD /* BMIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E571A197632BB000398CD /* BMIPage.html */; };
 		6E3E57201976744B000398CD /* CFKPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571F1976744B000398CD /* CFKPIViewController.m */; };
@@ -221,6 +231,27 @@
 		6E3DFEBA19D405D700ACF40C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6E3DFEBC19D405E100ACF40C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6E3DFEBE19D405EE00ACF40C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E3DFEC319D5565A00ACF40C /* GraphConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphConstants.h; sourceTree = "<group>"; };
+		6E3DFEC419D5565A00ACF40C /* GraphDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphDataObject.h; sourceTree = "<group>"; };
+		6E3DFEC519D5565A00ACF40C /* GraphDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphDataObject.m; sourceTree = "<group>"; };
+		6E3DFEC619D5565A00ACF40C /* GraphLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphLine.h; sourceTree = "<group>"; };
+		6E3DFEC719D5565A00ACF40C /* GraphLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphLine.m; sourceTree = "<group>"; };
+		6E3DFEC819D5565A00ACF40C /* GraphPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphPoint.h; sourceTree = "<group>"; };
+		6E3DFEC919D5565A00ACF40C /* GraphPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphPoint.m; sourceTree = "<group>"; };
+		6E3DFECA19D5565A00ACF40C /* GraphScrollableArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphScrollableArea.h; sourceTree = "<group>"; };
+		6E3DFECB19D5565A00ACF40C /* GraphScrollableArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphScrollableArea.m; sourceTree = "<group>"; };
+		6E3DFECC19D5565A00ACF40C /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		6E3DFECD19D5565A00ACF40C /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		6E3DFECE19D5565A00ACF40C /* NSDate+Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Graph.h"; sourceTree = "<group>"; };
+		6E3DFECF19D5565A00ACF40C /* NSDate+Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Graph.m"; sourceTree = "<group>"; };
+		6E3DFED019D5565A00ACF40C /* UIBezierPath+Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Smoothing.h"; sourceTree = "<group>"; };
+		6E3DFED119D5565A00ACF40C /* UIBezierPath+Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Smoothing.m"; sourceTree = "<group>"; };
+		6E3DFED219D5565A00ACF40C /* UIColor+Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Graph.h"; sourceTree = "<group>"; };
+		6E3DFED319D5565A00ACF40C /* UIColor+Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Graph.m"; sourceTree = "<group>"; };
+		6E3DFED419D5565A00ACF40C /* UIFont+Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Graph.h"; sourceTree = "<group>"; };
+		6E3DFED519D5565A00ACF40C /* UIFont+Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Graph.m"; sourceTree = "<group>"; };
+		6E3DFED719D5565A00ACF40C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6E3E571719762E90000398CD /* CFBMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBMIViewController.h; sourceTree = "<group>"; };
 		6E3E571819762E90000398CD /* CFBMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBMIViewController.m; sourceTree = "<group>"; };
 		6E3E571A197632BB000398CD /* BMIPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BMIPage.html; sourceTree = "<group>"; };
@@ -514,6 +545,41 @@
 			);
 			path = Search;
 			sourceTree = "<group>";
+		};
+		6E3DFEC219D5565A00ACF40C /* ADGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DFEC319D5565A00ACF40C /* GraphConstants.h */,
+				6E3DFEC419D5565A00ACF40C /* GraphDataObject.h */,
+				6E3DFEC519D5565A00ACF40C /* GraphDataObject.m */,
+				6E3DFEC619D5565A00ACF40C /* GraphLine.h */,
+				6E3DFEC719D5565A00ACF40C /* GraphLine.m */,
+				6E3DFEC819D5565A00ACF40C /* GraphPoint.h */,
+				6E3DFEC919D5565A00ACF40C /* GraphPoint.m */,
+				6E3DFECA19D5565A00ACF40C /* GraphScrollableArea.h */,
+				6E3DFECB19D5565A00ACF40C /* GraphScrollableArea.m */,
+				6E3DFECC19D5565A00ACF40C /* GraphView.h */,
+				6E3DFECD19D5565A00ACF40C /* GraphView.m */,
+				6E3DFECE19D5565A00ACF40C /* NSDate+Graph.h */,
+				6E3DFECF19D5565A00ACF40C /* NSDate+Graph.m */,
+				6E3DFED019D5565A00ACF40C /* UIBezierPath+Smoothing.h */,
+				6E3DFED119D5565A00ACF40C /* UIBezierPath+Smoothing.m */,
+				6E3DFED219D5565A00ACF40C /* UIColor+Graph.h */,
+				6E3DFED319D5565A00ACF40C /* UIColor+Graph.m */,
+				6E3DFED419D5565A00ACF40C /* UIFont+Graph.h */,
+				6E3DFED519D5565A00ACF40C /* UIFont+Graph.m */,
+			);
+			path = ADGraphView;
+			sourceTree = SOURCE_ROOT;
+		};
+		6E3DFED619D5565A00ACF40C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6E3DFED719D5565A00ACF40C /* MBProgressHUD.h */,
+				6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = SOURCE_ROOT;
 		};
 		6E3E57141975327F000398CD /* bmiscene */ = {
 			isa = PBXGroup;
@@ -842,6 +908,8 @@
 		6EB4BAF0196BE89700073FA5 /* DiabetesCare */ = {
 			isa = PBXGroup;
 			children = (
+				6E3DFEC219D5565A00ACF40C /* ADGraphView */,
+				6E3DFED619D5565A00ACF40C /* MBProgressHUD */,
 				6EA978751993519600DA9B9A /* stringresource */,
 				6EA978091985FB0500DA9B9A /* datamodel */,
 				6E59422219D1265A00AA0CEF /* icon_launchimage */,
@@ -1137,11 +1205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E25488019ADC38600D4F59A /* ProfileMasterData.m in Sources */,
+				6E3DFEE119D5565A00ACF40C /* UIFont+Graph.m in Sources */,
+				6E3DFEDD19D5565A00ACF40C /* GraphView.m in Sources */,
 				6EEC4A821980D63000BC2B11 /* CFKPIGlycemiaTableCell.m in Sources */,
 				6EA9786F199233E800DA9B9A /* Recipe.m in Sources */,
+				6E3DFEDB19D5565A00ACF40C /* GraphPoint.m in Sources */,
 				6E5942D519D149AA00AA0CEF /* IASKTextField.m in Sources */,
 				6EB4BAF7196BE89700073FA5 /* main.m in Sources */,
 				6E5942C919D149AA00AA0CEF /* IASKAppSettingsWebViewController.m in Sources */,
+				6E3DFEDC19D5565A00ACF40C /* GraphScrollableArea.m in Sources */,
 				6EB4BAFB196BE89700073FA5 /* cfAppDelegate.m in Sources */,
 				6E5942D119D149AA00AA0CEF /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
 				6E25488319ADC38700D4F59A /* HistoryRecords.m in Sources */,
@@ -1156,6 +1228,7 @@
 				6E5942D219D149AA00AA0CEF /* IASKPSTitleValueSpecifierViewCell.m in Sources */,
 				6E5942D019D149AA00AA0CEF /* IASKPSSliderSpecifierViewCell.m in Sources */,
 				6E25487719AC5ECF00D4F59A /* CFMedicalRecordTableTableViewController.m in Sources */,
+				6E3DFEDA19D5565A00ACF40C /* GraphLine.m in Sources */,
 				6E3E571919762E90000398CD /* CFBMIViewController.m in Sources */,
 				6E25487A19AC5FC700D4F59A /* CFMedicalRecordTableCellViewTableViewCell.m in Sources */,
 				6E5942CA19D149AA00AA0CEF /* IASKSpecifierValuesViewController.m in Sources */,
@@ -1168,7 +1241,11 @@
 				6EDB47ED19A59E9700BCF1C3 /* CFBloodPressureTableCell.m in Sources */,
 				6E5942CB19D149AA00AA0CEF /* IASKSettingsReader.m in Sources */,
 				6EB4BB34196E82CB00073FA5 /* CFMenuTableViewCellContent.m in Sources */,
+				6E3DFEE219D5565A00ACF40C /* MBProgressHUD.m in Sources */,
 				6EA978321989E23900DA9B9A /* CFGlycemiaModifyViewController.m in Sources */,
+				6E3DFEDE19D5565A00ACF40C /* NSDate+Graph.m in Sources */,
+				6E3DFEDF19D5565A00ACF40C /* UIBezierPath+Smoothing.m in Sources */,
+				6E3DFEE019D5565A00ACF40C /* UIColor+Graph.m in Sources */,
 				6EA97871199233E800DA9B9A /* RecipeTableCell.m in Sources */,
 				6E5942CE19D149AA00AA0CEF /* IASKSettingsStoreUserDefaults.m in Sources */,
 				6EDB47F619A5A6E200BCF1C3 /* CFBloodPressureModifyViewController.m in Sources */,
@@ -1181,6 +1258,7 @@
 				6EA97836198B94B500DA9B9A /* cfHistoryViewController.m in Sources */,
 				6E25488C19ADC38700D4F59A /* TodayRecord.m in Sources */,
 				6EA978401992304B00DA9B9A /* cfRecommendedFoodedTableViewController.m in Sources */,
+				6E3DFED919D5565A00ACF40C /* GraphDataObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1293,7 +1371,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/i052156/Documents/workbook/DiabetesCare/Kal-master/src",
+					"$(inherited)/Kal-master/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1332,7 +1410,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/i052156/Documents/workbook/DiabetesCare/Kal-master/src",
+					"$(inherited)/Kal-master/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-all_load";
@@ -1357,6 +1435,7 @@
 					"/Users/i052156/Documents/workbook/DiabetesCare/tapkulibrary-master/src",
 				);
 				INFOPLIST_FILE = "DiabetesCare/DiabetesCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.12.0",
@@ -1386,6 +1465,7 @@
 					"/Users/i052156/Documents/workbook/DiabetesCare/tapkulibrary-master/src",
 				);
 				INFOPLIST_FILE = "DiabetesCare/DiabetesCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-6.12.0",

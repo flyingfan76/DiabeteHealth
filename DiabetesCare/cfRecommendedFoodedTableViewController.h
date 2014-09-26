@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface cfRecommendedFoodedTableViewController : UITableViewController<ADBannerViewDelegate>
 
+@interface cfRecommendedFoodedTableViewController : UITableViewController<ADBannerViewDelegate,GADBannerViewDelegate>
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end

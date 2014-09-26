@@ -12,9 +12,10 @@
 #import "CFKPIViewController.h"
 #import "CFBloodPressureViewController.h"
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
 
-@interface CFDailyRecordTableViewController : UITableViewController <TKCalendarMonthViewDelegate,CFKPIViewControllerDelegate,CFBloodPressureViewControllerDelegate,ADBannerViewDelegate>
+@interface CFDailyRecordTableViewController : UITableViewController <TKCalendarMonthViewDelegate,CFKPIViewControllerDelegate,CFBloodPressureViewControllerDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 
 
@@ -30,6 +31,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *glycemiaAfterFood;
 @property (weak, nonatomic) IBOutlet UILabel *bloodPressure;
 @property (weak, nonatomic) IBOutlet UILabel *bmiLabel;
+
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 
 @end

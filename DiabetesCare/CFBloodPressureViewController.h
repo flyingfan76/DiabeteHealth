@@ -10,6 +10,7 @@
 #import "TapkuLibrary/TapkuLibrary.h"
 #import <CoreData/CoreData.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
 @class CFBloodPressureViewController;
 
@@ -17,7 +18,7 @@
 - (void)PressureDidBack:(CFBloodPressureViewController *)controller;
 @end
 
-@interface CFBloodPressureViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate,ADBannerViewDelegate>
+@interface CFBloodPressureViewController : UIViewController<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, TKCalendarDayViewDelegate,ADBannerViewDelegate,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 
@@ -28,6 +29,9 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic, weak) id <CFBloodPressureViewControllerDelegate> delegate;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 
 @end

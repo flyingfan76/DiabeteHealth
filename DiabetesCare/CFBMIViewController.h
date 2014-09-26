@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
-@interface CFBMIViewController : UIViewController<ADBannerViewDelegate>
+@interface CFBMIViewController : UIViewController<ADBannerViewDelegate,GADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
+
+@property (nonatomic, strong) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @end
