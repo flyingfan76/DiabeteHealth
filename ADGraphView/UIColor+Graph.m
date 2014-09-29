@@ -30,15 +30,15 @@
     return [UIColor colorWithRed:51./255. green:15./255. blue:57./255 alpha:1.f];
 }
 
-+ (UIColor *)graphDarkPurpleColor{
-    
-    return [UIColor colorWithRed:103./255. green:41./255. blue:106./255. alpha:1.f];
-}
-
-+ (UIColor *)graphLightPurpleColor{
-    
-    return [UIColor colorWithRed:151./255. green:65./255. blue:145./255. alpha:1.f];
-}
+//+ (UIColor *)graphDarkPurpleColor{
+//    
+//    return [UIColor colorWithRed:103./255. green:41./255. blue:106./255. alpha:1.f];
+//}
+//
+//+ (UIColor *)graphLightPurpleColor{
+//    
+//    return [UIColor colorWithRed:151./255. green:65./255. blue:145./255. alpha:1.f];
+//}
 
 + (UIColor *)graphLightGreenColor{
     

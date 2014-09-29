@@ -35,8 +35,10 @@
 @interface GraphScrollableArea()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) NSArray *objectsArray;
+@property (nonatomic, strong) NSArray *secondObjectsArray;
 
 @property (nonatomic, strong) GraphLine *objectsLine;
+
 
 @property (nonatomic, unsafe_unretained) NSInteger startUNIXDate;
 @property (nonatomic, unsafe_unretained) NSInteger endUNIXDate;
@@ -68,7 +70,7 @@
     return self;
 }
 
-- (id)initWithGraphDataObjectsArray:(NSArray *)objectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate delegate:(id<GraphScrollableViewDelegate>)theDelegate{
+- (id)initWithGraphDataObjectsArray:(NSArray *)objectsArray secondSeries:(NSArray*)secondObjectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate delegate:(id<GraphScrollableViewDelegate>)theDelegate{
     
     if(self = [super initWithFrame: VISIBLE_FRAME]){
         
@@ -78,6 +80,7 @@
         self.startUNIXDate = [startDate timeIntervalSince1970];
         self.endUNIXDate = [endDate timeIntervalSince1970];
         self.objectsArray = objectsArray;
+        self.secondObjectsArray = secondObjectsArray;
         
         self.startDate = startDate;
         self.endDate = endDate;
@@ -229,6 +232,7 @@
     [self.objectsLine removeFromSuperview];
     self.objectsLine = nil;
     
+    
     for(UIView *view in self.subviews){
         
         if([view isKindOfClass:[GraphPoint class]]){
@@ -243,7 +247,7 @@
 - (CGPoint)pointForValue:(NSNumber *)value atDayNumber:(float)dayNumber{
     
     float x = self.dayIntervalWidth * dayNumber + GRAPH_SCROLLABLE_VIEW_FRAME_WIDTH_DELTA / 2;
-    float y = VISIBLE_FRAME.size.height - Y_OFFSET_FOR_GRAPH_POINTS - ([value floatValue] + MAXIMUM_GRAPH_Y_VALUE) * VALUE_Y_INTERVAL;
+    float y = VISIBLE_FRAME.size.height - Y_OFFSET_FOR_GRAPH_POINTS - ([value floatValue] + 0) * VALUE_Y_INTERVAL;
     
     return CGPointMake(x, y);
 }
@@ -255,11 +259,15 @@
 
 #pragma mark Lines
 
-- (void)drawLineWithPointsArray:(NSArray *)pointsArray{
+- (void)drawLineWithPointsArray:(NSArray *)pointsArray secondPointsArray:(NSArray *)secPointsArray{
     
-    self.objectsLine = [[GraphLine alloc] initWithFrame:self.bounds pointsArray:pointsArray minY:[self pointForValue:@(3) atDayNumber:0].y maxY:[self pointForValue:@(-3) atDayNumber:0].y];
+    self.objectsLine = [[GraphLine alloc] initWithFrame:self.bounds pointsArray:pointsArray secPointsArray:secPointsArray minY:[self pointForValue:@(MAXIMUM_GRAPH_Y_VALUE) atDayNumber:0].y maxY:[self pointForValue:@(MINIMUM_GRAPH_Y_VALUE) atDayNumber:0].y];
     [self addSubview: self.objectsLine];
 }
+
+
+
+
 
 #pragma mark Points
 
@@ -311,6 +319,15 @@
     return dayObjectsArray;
 }
 
+
+- (NSArray *)objectsOfSecondForDayNumber:(NSInteger)dayNumber{
+    
+    NSArray *dayObjectsArray = [self.secondObjectsArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.time >= %@ && SELF.time < %@", [NSDate dateWithTimeIntervalSince1970:(self.startUNIXDate + NUMBER_OF_SECONDS_IN_DAY*dayNumber)], [NSDate dateWithTimeIntervalSince1970:(self.startUNIXDate + NUMBER_OF_SECONDS_IN_DAY * (dayNumber + 1))]]];
+    
+    return dayObjectsArray;
+}
+
+
 #pragma mark Reload
 
 - (void)reloadWithStartDay:(NSInteger)startDay completionCallback:(void(^)(void))callback{
@@ -333,13 +350,33 @@
             }
 
         }
+
+        NSMutableArray *secondObjectsLinePoints = [NSMutableArray array];
+        NSMutableDictionary *secondDailyObjects = [NSMutableDictionary dictionary];
+        if (self.secondObjectsArray){
+
+            for(int dayNumber = startDay; dayNumber <= numberOfVisibleDays; dayNumber++){
+                
+                NSArray *secondDailyObjectsArray = [self objectsOfSecondForDayNumber: dayNumber];
+                [secondDailyObjects setObject: secondDailyObjectsArray forKey: [NSString stringWithFormat:@"%d", dayNumber]];
+                
+                if([secondDailyObjectsArray count] > 0){
+                    
+                    [secondObjectsLinePoints addObject: [NSValue valueWithCGPoint: [self pointForValue:[self averageObjectValueForKey:@"value" inArray:secondDailyObjectsArray] atDayNumber:dayNumber]]];
+                }
+                
+            }
+        }
+        
+ 
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
             if([objectsLinePoints count] > 0){
                 
-                [self drawLineWithPointsArray:objectsLinePoints];
+                [self drawLineWithPointsArray:objectsLinePoints secondPointsArray:secondObjectsLinePoints];
             }
+            
             
             if(self.zoomRate <= MAXIMUM_ZOOM_SCALE_FOR_DRAWNING_OBJECT_POINT){
             
@@ -350,7 +387,20 @@
                         [self drawPointAtPosition:[self pointForValue:object.value atDayNumber:[dayNumber integerValue]] withObject:object];
                     }
                 }
+                
+                if(secondDailyObjects){
+                    
+                    for(NSString *dayNumber in [secondDailyObjects allKeys]){
+                        
+                        for(GraphDataObject *object in secondDailyObjects[dayNumber]){
+                            
+                            [self drawPointAtPosition:[self pointForValue:object.value atDayNumber:[dayNumber integerValue]] withObject:object];
+                        }
+                    }
+                }
             }
+            
+ 
             
             callback();
         });
@@ -395,7 +445,7 @@
 - (void)drawDateForDayNumber:(NSInteger)dayNumber{
     
     //Day number
-    [[UIColor whiteColor] set];
+    [[UIColor grayColor] set];
     
     NSDate *localDateForDayNumber = [[self.startDate dateWithDaysAhead: dayNumber] localDate];    
     NSInteger day = [localDateForDayNumber dayNumber];
@@ -407,7 +457,7 @@
     
     [dayString drawInRect:dayStringFrame withFont:[UIFont defaultGraphBoldFontWithSize: 12.]];
     
-    [[UIColor graphDarkPurpleColor] set];
+    [[UIColor grayColor] set];
     
     //Divider
     UIBezierPath *horizontalLine = [[UIBezierPath alloc] init];
@@ -420,7 +470,7 @@
     
     [horizontalLine stroke];
     
-    [[UIColor graphLightPurpleColor] set];
+    [[UIColor grayColor] set];
     
     //Month
     NSString *month = [[localDateForDayNumber monthShortStringDescription] lowercaseString];
@@ -462,7 +512,7 @@
         UIBezierPath *datePoint = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(startPoint.x - X_AXIS_DATE_POINT_RADIUS, startPoint.y - X_AXIS_DATE_POINT_RADIUS, X_AXIS_DATE_POINT_RADIUS * 2, X_AXIS_DATE_POINT_RADIUS * 2)];
         [datePoint fill];
         
-        [[UIColor graphLightPurpleColor] set];
+        [[UIColor grayColor] set];
         UIBezierPath *dateBorder = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(startPoint.x - X_AXIS_DATE_POINT_BORDER_OVAL_RADIUS, startPoint.y - X_AXIS_DATE_POINT_BORDER_OVAL_RADIUS, X_AXIS_DATE_POINT_BORDER_OVAL_RADIUS * 2, X_AXIS_DATE_POINT_BORDER_OVAL_RADIUS * 2)];
         [dateBorder stroke];
         

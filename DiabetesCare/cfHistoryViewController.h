@@ -25,6 +25,7 @@
 @property (nonatomic, strong) GADBannerView *admobBannerView;
 
 @property (nonatomic, strong) GraphView *graphView;
+@property (nonatomic, strong) GraphView *pressureGraphView;
 @property (nonatomic, strong) MBProgressHUD *hud;
 
 @end

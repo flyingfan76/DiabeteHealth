@@ -41,9 +41,9 @@
 - (UIColor *)fillColorForValue:(NSNumber *)value{
     
     switch ([value integerValue]) {
-        case -3: return [UIColor graphPointMinusThreeValueColor]; break;
-        case -2: return [UIColor graphPointMinusTwoValueColor]; break;
-        case -1: return [UIColor graphPointMinusOneValueColor]; break;
+        case 4: return [UIColor graphPointMinusThreeValueColor]; break;
+        case 5: return [UIColor graphPointMinusTwoValueColor]; break;
+        case 6: return [UIColor graphPointMinusOneValueColor]; break;
         case 0: return [UIColor graphPointZeroValueColor]; break;
         case 1: return [UIColor graphPointOneValueColor]; break;
         case 2: return [UIColor graphPointTwoValueColor]; break;

@@ -56,7 +56,7 @@
 @property (nonatomic, unsafe_unretained) NSInteger zoomRate;
 
 //****************************
-- (id)initWithGraphDataObjectsArray:(NSArray *)objectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate delegate:(id<GraphScrollableViewDelegate>)theDelegate;
+- (id)initWithGraphDataObjectsArray:(NSArray *)objectsArray secondSeries:(NSArray*)secondObjectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate delegate:(id<GraphScrollableViewDelegate>)theDelegate;
 
 //****************************
 - (CGRect)recentObjectsVisibleRect;

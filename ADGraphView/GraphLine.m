@@ -16,6 +16,8 @@
 @interface GraphLine()
 
 @property (nonatomic, strong) NSArray *pointsArray;
+@property (nonatomic, strong) NSArray *secPointsArray;
+
 @property (nonatomic, strong) UIColor *lineColor;
 
 @property (nonatomic, unsafe_unretained) CGFloat minPointY;
@@ -25,15 +27,17 @@
 
 @implementation GraphLine
 
-- (id)initWithFrame:(CGRect)frame pointsArray:(NSArray *)thePointsArray minY:(CGFloat)minY maxY:(CGFloat)maxY{
+- (id)initWithFrame:(CGRect)frame pointsArray:(NSArray *)thePointsArray secPointsArray:(NSArray *)theSecPointsArray minY:(CGFloat)minY maxY:(CGFloat)maxY{
     self = [super initWithFrame:frame];
     if (self) {
         
         self.backgroundColor = [UIColor clearColor];
         self.pointsArray = thePointsArray;
+        self.secPointsArray = theSecPointsArray;
         self.minPointY = minY;
         self.maxPointY = maxY;
         self.lineColor = [UIColor graphLightGreenColor];
+        self.alpha = 0.5f;
     }
     return self;
 }
@@ -63,6 +67,32 @@
 
     UIBezierPath *smoothPath = [path smoothedPathWithGranularity: BEZIER_PATH_GRANULARITY minY:self.minPointY maxY:self.maxPointY];
     [smoothPath stroke];
+    
+    if (self.secPointsArray && [self.secPointsArray count] > 0){
+        self.lineColor = [UIColor graphRedColor];
+        [self.lineColor set];
+        
+        UIBezierPath *secPath = [[UIBezierPath alloc] init];
+        [secPath setLineWidth: BEZIER_PATH_WIDTH];
+        [secPath setLineCapStyle:kCGLineCapRound];
+        
+        int numberOfPoints = [self.secPointsArray count];
+        
+        [secPath moveToPoint: [self.secPointsArray[0] CGPointValue]];
+        
+        for(int i = 1; i < numberOfPoints; i++){
+            
+            CGPoint point = [self.secPointsArray[i] CGPointValue];
+            
+            [secPath addLineToPoint: point];
+        }
+        
+        UIBezierPath *smoothPath = [secPath smoothedPathWithGranularity: BEZIER_PATH_GRANULARITY minY:self.minPointY maxY:self.maxPointY];
+        [smoothPath stroke];
+    }
+
+    
+    
 }
 
 @end

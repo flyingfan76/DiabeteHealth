@@ -43,14 +43,15 @@
 
 @synthesize graphScrollView;
 
-- (id)initWithFrame:(CGRect)frame objectsArray:(NSArray *)theObjectsArray startDate:(NSDate *)theStartDate endDate:(NSDate *)theEndDate delegate:(id<GraphViewDelegate>)theDelegate
+- (id)initWithFrame:(CGRect)frame objectsArray:(NSArray *)theObjectsArray secondObjectsArray:(NSArray *)theSecondObjectsArray startDate:(NSDate *)theStartDate endDate:(NSDate *)theEndDate delegate:(id<GraphViewDelegate>)theDelegate
 {
     self = [super initWithFrame:frame];
     if (self) {
         
         self.isGraphViewInialized = NO;
         self.delegate = theDelegate;
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"history_graph_background"]];
+        //self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"history_graph_background"]];
+        self.backgroundColor = [UIColor whiteColor];
         
         self.numberOfDays = [NSDate daysBetweenDateOne:theStartDate dateTwo:theEndDate];
         if(self.numberOfDays < MINIMUM_ZOOM_RATE){
@@ -62,7 +63,7 @@
         
         [self addYAxisLabels];
         [self addGraphScrollView];
-        [self addGraphScrollableViewWithObjectsArray:theObjectsArray startDate:theStartDate endDate:theEndDate];
+        [self addGraphScrollableViewWithObjectsArray:theObjectsArray secondSeries:theSecondObjectsArray startDate:theStartDate endDate:theEndDate];
         [self addZoomRateLabel];
         
         self.graphScrollableView.zoomRate = MINIMUM_ZOOM_RATE;
@@ -78,7 +79,7 @@
     self.zoomRateLabel = [[UILabel alloc] initWithFrame:ZOOM_RATE_LABEL_FRAME];
     
     self.zoomRateLabel.backgroundColor = [UIColor clearColor];
-    self.zoomRateLabel.textColor = [UIColor whiteColor];
+    self.zoomRateLabel.textColor = [UIColor grayColor];
     self.zoomRateLabel.font = [UIFont defaultGraphBoldFontWithSize: 18.];
     self.zoomRateLabel.alpha = 0.f;
     
@@ -157,9 +158,9 @@
     [self.graphScrollView scrollRectToVisible:[self.graphScrollableView recentObjectsVisibleRect] animated:NO];
 }
 
-- (void)addGraphScrollableViewWithObjectsArray:(NSArray *)objectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate{
+- (void)addGraphScrollableViewWithObjectsArray:(NSArray *)objectsArray secondSeries:(NSArray*)secondObjectsArray startDate:(NSDate *)startDate endDate:(NSDate *)endDate{
     
-    self.graphScrollableView = [[GraphScrollableArea alloc] initWithGraphDataObjectsArray:objectsArray startDate:startDate endDate:endDate delegate:self];
+    self.graphScrollableView = [[GraphScrollableArea alloc] initWithGraphDataObjectsArray:objectsArray secondSeries:secondObjectsArray startDate:startDate endDate:endDate delegate:self];
     self.graphScrollableView.backgroundColor = [UIColor clearColor];
     
     [self.graphScrollView addSubview: self.graphScrollableView];
@@ -174,12 +175,27 @@
     for(int value = MINIMUM_GRAPH_Y_VALUE; value <= MAXIMUM_GRAPH_Y_VALUE; value++){
         
         float yOrigin = [self pointForValue:@(value) atDayNumber:0].y;
+//        
+//        UIImageView *axisImageView = [[UIImageView alloc] initWithFrame:CGRectMake(xOrigin, yOrigin - Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height / 2, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.width, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height)];
+//        
+//        [axisImageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"history_graph_%d_label", value]]];
+//        
+//        [self addSubview: axisImageView];
         
-        UIImageView *axisImageView = [[UIImageView alloc] initWithFrame:CGRectMake(xOrigin, yOrigin - Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height / 2, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.width, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height)];
+        UILabel *axisLabel = [[UILabel alloc] initWithFrame:CGRectMake(xOrigin, yOrigin - Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height / 2, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.width, Y_AXIS_LABEL_IMAGE_VIEW_SIZE.height)];
         
-        [axisImageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"history_graph_%d_label", value]]];
+
         
-        [self addSubview: axisImageView];
+        NSString *labelString = [NSString stringWithFormat:@"%d", value*50];
+        
+        [axisLabel setText:labelString];
+  
+        axisLabel.backgroundColor = [UIColor clearColor];
+        axisLabel.textColor = [UIColor grayColor];
+        axisLabel.font = [UIFont defaultGraphBoldFontWithSize: 6.0];
+        axisLabel.alpha = 1.f;
+        
+        [self addSubview: axisLabel];
     }
 }
 
@@ -188,7 +204,7 @@
 - (CGPoint)pointForValue:(NSNumber *)value atDayNumber:(float)dayNumber{
     
     float x = self.dayXInterval * dayNumber + VISIBLE_GRAPH_FRAME.origin.x;
-    float y = VISIBLE_GRAPH_FRAME.size.height + VISIBLE_GRAPH_FRAME.origin.y - ([value floatValue] + MAXIMUM_GRAPH_Y_VALUE) * VALUE_Y_INTERVAL;
+    float y = VISIBLE_GRAPH_FRAME.size.height + VISIBLE_GRAPH_FRAME.origin.y - ([value floatValue] + 0) * VALUE_Y_INTERVAL;
     
     return CGPointMake(x, y);
 }
@@ -201,9 +217,9 @@
 {
     
     //Horizontal dash
-    for(int value = -3; value <= 3; value++){
+    for(int value = MINIMUM_GRAPH_Y_VALUE; value <= MAXIMUM_GRAPH_Y_VALUE; value++){
         
-        [[UIColor graphHorizontalLineColorAlpha] set];
+        [[UIColor grayColor] set];
         
         UIBezierPath *bezier = [[UIBezierPath alloc] init];
         [bezier moveToPoint:[self pointForValue:@(value) atDayNumber:-0.8]];
@@ -217,13 +233,13 @@
         }
         else{
             
-            [[UIColor graphHorizontalLineColor] set];
+            [[UIColor grayColor] set];
         }
         
         [bezier stroke];
     }
     
-    [[UIColor graphHorizontalLineColor] set];
+    [[UIColor grayColor] set];
     
     //Y Axis
     UIBezierPath *bezier = [[UIBezierPath alloc] init];

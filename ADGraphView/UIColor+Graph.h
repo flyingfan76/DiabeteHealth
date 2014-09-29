@@ -30,8 +30,8 @@
 
 @interface UIColor (Graph)
 
-+ (UIColor *)graphLightPurpleColor;
-+ (UIColor *)graphDarkPurpleColor;
+//+ (UIColor *)graphLightPurpleColor;
+//+ (UIColor *)graphDarkPurpleColor;
 + (UIColor *)graphBrownColor;
 + (UIColor *)graphGrayColor;
 + (UIColor *)graphLightGreenColor;

@@ -34,6 +34,8 @@
 		6E3DFEE019D5565A00ACF40C /* UIColor+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED319D5565A00ACF40C /* UIColor+Graph.m */; };
 		6E3DFEE119D5565A00ACF40C /* UIFont+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED519D5565A00ACF40C /* UIFont+Graph.m */; };
 		6E3DFEE219D5565A00ACF40C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */; };
+		6E3DFEEA19D952CB00ACF40C /* bloodpressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DFEE919D952CB00ACF40C /* bloodpressure.png */; };
+		6E3DFEEC19D955A100ACF40C /* gi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DFEEB19D955A100ACF40C /* gi.png */; };
 		6E3E571919762E90000398CD /* CFBMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571819762E90000398CD /* CFBMIViewController.m */; };
 		6E3E571B197632BB000398CD /* BMIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E571A197632BB000398CD /* BMIPage.html */; };
 		6E3E57201976744B000398CD /* CFKPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571F1976744B000398CD /* CFKPIViewController.m */; };
@@ -252,6 +254,8 @@
 		6E3DFED519D5565A00ACF40C /* UIFont+Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Graph.m"; sourceTree = "<group>"; };
 		6E3DFED719D5565A00ACF40C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6E3DFEE919D952CB00ACF40C /* bloodpressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodpressure.png; sourceTree = "<group>"; };
+		6E3DFEEB19D955A100ACF40C /* gi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gi.png; sourceTree = "<group>"; };
 		6E3E571719762E90000398CD /* CFBMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBMIViewController.h; sourceTree = "<group>"; };
 		6E3E571819762E90000398CD /* CFBMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBMIViewController.m; sourceTree = "<group>"; };
 		6E3E571A197632BB000398CD /* BMIPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BMIPage.html; sourceTree = "<group>"; };
@@ -759,6 +763,8 @@
 		6EA97833198B949100DA9B9A /* historyScene */ = {
 			isa = PBXGroup;
 			children = (
+				6E3DFEEB19D955A100ACF40C /* gi.png */,
+				6E3DFEE919D952CB00ACF40C /* bloodpressure.png */,
 				6EA97837198B950E00DA9B9A /* htmlpage */,
 				6EA97834198B94B500DA9B9A /* cfHistoryViewController.h */,
 				6EA97835198B94B500DA9B9A /* cfHistoryViewController.m */,
@@ -1140,6 +1146,7 @@
 				6EB4BB01196BE89700073FA5 /* Main_iPad.storyboard in Resources */,
 				6E25489419AEDA7900D4F59A /* pushpin@2x.png in Resources */,
 				6E59423619D1269000AA0CEF /* Icon-60@2x.png in Resources */,
+				6E3DFEEA19D952CB00ACF40C /* bloodpressure.png in Resources */,
 				6E59423919D1269000AA0CEF /* Icon-76.png in Resources */,
 				6E59424219D1269000AA0CEF /* iTunesArtwork@2x.png in Resources */,
 				6E59423F19D1269000AA0CEF /* Icon.png in Resources */,
@@ -1174,6 +1181,7 @@
 				6EA9786C199233E800DA9B9A /* thai_shrimp_cake.jpg in Resources */,
 				6EB4BB25196D1D0000073FA5 /* diabetic.jpg in Resources */,
 				6E59421419D10B1500AA0CEF /* cutlery6.png in Resources */,
+				6E3DFEEC19D955A100ACF40C /* gi.png in Resources */,
 				6EA9786B199233E800DA9B9A /* starbucks_coffee.jpg in Resources */,
 				6EB4BAF5196BE89700073FA5 /* InfoPlist.strings in Resources */,
 				6E59423A19D1269000AA0CEF /* Icon-76@2x.png in Resources */,

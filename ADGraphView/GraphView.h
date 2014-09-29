@@ -42,6 +42,6 @@
 
 @interface GraphView : UIView
 
-- (id)initWithFrame:(CGRect)frame objectsArray:(NSArray *)theObjectsArray startDate:(NSDate *)theStartDate endDate:(NSDate *)theEndDate delegate:(id<GraphViewDelegate>)theDelegate;
+- (id)initWithFrame:(CGRect)frame objectsArray:(NSArray *)theObjectsArray secondObjectsArray:(NSArray *)theSecondObjectsArray startDate:(NSDate *)theStartDate endDate:(NSDate *)theEndDate delegate:(id<GraphViewDelegate>)theDelegate;
 
 @end

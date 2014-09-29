@@ -31,6 +31,6 @@
 
 @interface GraphLine : UIView
 
-- (id)initWithFrame:(CGRect)frame pointsArray:(NSArray *)thePointsArray minY:(CGFloat)minY maxY:(CGFloat)maxY;
+- (id)initWithFrame:(CGRect)frame pointsArray:(NSArray *)thePointsArray secPointsArray:(NSArray *)theSecPointsArray minY:(CGFloat)minY maxY:(CGFloat)maxY;
 
 @end

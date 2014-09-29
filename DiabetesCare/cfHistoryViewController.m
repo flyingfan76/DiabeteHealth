@@ -48,13 +48,18 @@
         NSDate *startDate = [NSDate dateWithTimeIntervalSince1970: 1351036800];
         NSDate *endDate = [NSDate date];
         
-        NSArray *graphObjects = [NSArray arrayWithArray: [GraphDataObject randomGraphDataObjectsArray:2000 startDate:startDate endDate:endDate]];
+        NSArray *graphObjects = [self GenerateGraphDataObjectsArrayofPreSuger];
+        NSArray *secondGraphObjects = [self GenerateGraphDataObjectsArrayofAfterSuger];
+        NSArray *pressureGraphObjects = [self GenerateGraphDataObjectsArrayofPressure];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
             if([graphObjects count] > 0){
                 
-                self.graphView = [[GraphView alloc] initWithFrame:DEFAULT_GRAPH_VIEW_FRAME objectsArray:graphObjects startDate:startDate endDate:endDate delegate:self];
+                self.graphView = [[GraphView alloc] initWithFrame:DEFAULT_GRAPH_VIEW_FRAME objectsArray:graphObjects
+                                               secondObjectsArray:secondGraphObjects startDate:startDate endDate:endDate delegate:self];
+                
+                self.graphView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"gi.png"]];
                 
                 
                 [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
@@ -67,6 +72,28 @@
                 
                 [self.view insertSubview:self.graphView atIndex:0];
             }
+            
+            if([pressureGraphObjects count] > 0){
+                
+                self.pressureGraphView = [[GraphView alloc] initWithFrame:DEFAULT_GRAPH_VIEW_FRAME objectsArray:pressureGraphObjects secondObjectsArray:nil startDate:startDate endDate:endDate delegate:self];
+                
+                
+                self.pressureGraphView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bloodpressure.png"]];
+                
+                [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+                
+                // Assumes the banner view is just off the bottom of the screen.
+                self.pressureGraphView.frame = CGRectOffset(self.graphView.frame, 0, 200);
+                
+                [UIView commitAnimations];
+                
+                
+                [self.view insertSubview:self.pressureGraphView atIndex:1];
+            }
+
+            
+            
+            
         });
     });
 
@@ -166,6 +193,103 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSArray *)GenerateGraphDataObjectsArrayofPreSuger{
+    
+
+    
+    id  sectionInfo =[[self.fetchedPreSugarResultsController sections] objectAtIndex:0];
+    
+    NSMutableArray *arrayItem =  [NSMutableArray array];;
+    // It's also a good idea to initialize i in your loop and not just declare it
+    for (int i = 0; i<[sectionInfo numberOfObjects]; i++) {
+        
+        GraphDataObject *object = [[GraphDataObject alloc] init];
+        
+
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        HistoryRecords *o = [self.fetchedPreSugarResultsController objectAtIndexPath:indexPath];
+        
+
+        NSDecimalNumber *dividing = [NSDecimalNumber decimalNumberWithString:@"50"];
+        
+        NSDecimalNumber *decNum = [NSDecimalNumber decimalNumberWithDecimal:[o.value decimalValue]];
+        NSDecimalNumber *valueNum = [decNum decimalNumberByDividingBy:dividing];
+        
+        object.time = o.date;
+        object.value = valueNum;
+        [arrayItem addObject:object];
+        
+    }
+    
+      return arrayItem;
+}
+
+- (NSArray *)GenerateGraphDataObjectsArrayofAfterSuger{
+    
+    
+    
+    id  sectionInfo =[[self.fetchedAfterSugarResultsController sections] objectAtIndex:0];
+    
+    NSMutableArray *arrayItem =  [NSMutableArray array];;
+    // It's also a good idea to initialize i in your loop and not just declare it
+    for (int i = 0; i<[sectionInfo numberOfObjects]; i++) {
+        
+        GraphDataObject *object = [[GraphDataObject alloc] init];
+        
+        
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        HistoryRecords *o = [self.fetchedAfterSugarResultsController objectAtIndexPath:indexPath];
+        
+        
+        NSDecimalNumber *dividing = [NSDecimalNumber decimalNumberWithString:@"50"];
+        
+        NSDecimalNumber *decNum = [NSDecimalNumber decimalNumberWithDecimal:[o.value decimalValue]];
+        NSDecimalNumber *valueNum = [decNum decimalNumberByDividingBy:dividing];
+        
+        object.time = o.date;
+        object.value = valueNum;
+        [arrayItem addObject:object];
+        
+    }
+    
+    return arrayItem;
+}
+
+- (NSArray *)GenerateGraphDataObjectsArrayofPressure{
+    
+    
+    
+    id  sectionInfo =[[self.fetchedPressureResultsController sections] objectAtIndex:0];
+    
+    NSMutableArray *arrayItem =  [NSMutableArray array];;
+    // It's also a good idea to initialize i in your loop and not just declare it
+    for (int i = 0; i<[sectionInfo numberOfObjects]; i++) {
+        
+        GraphDataObject *object = [[GraphDataObject alloc] init];
+        
+        
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        HistoryRecords *o = [self.fetchedPressureResultsController objectAtIndexPath:indexPath];
+        
+        
+        NSDecimalNumber *dividing = [NSDecimalNumber decimalNumberWithString:@"50"];
+        
+        NSDecimalNumber *decNum = [NSDecimalNumber decimalNumberWithDecimal:[o.value decimalValue]];
+        NSDecimalNumber *valueNum = [decNum decimalNumberByDividingBy:dividing];
+        
+        object.time = o.date;
+        object.value = valueNum;
+        [arrayItem addObject:object];
+        
+    }
+    
+    return arrayItem;
+}
+
 
 
 - (NSData *)generateOnePreSugarSeries{
