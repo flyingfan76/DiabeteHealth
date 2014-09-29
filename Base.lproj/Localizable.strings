@@ -1,11 +1,10 @@
 /* 
-  cfString.strings
+  Localizable.strings
   DiabetesCare
 
-  Created by Chen, Fan on 8/7/14.
+  Created by Chen, Fan on 9/29/14.
   Copyright (c) 2014 HealthyCare. All rights reserved.
 */
-
 "Personal Diaries" = "Personal Diaries";
 "History Overview" = "History Overview";
 "RecommendFood" = "Recommended Food";
@@ -24,3 +23,5 @@
 "OK" = "OK";
 "Error" = "Error";
 "Device has no camera" = "Device has no camera";
+"After food" = "After Food";
+"Before food" = "Before Food";

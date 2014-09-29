@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  DiabetesCare
+
+  Created by Chen, Fan on 9/29/14.
+  Copyright (c) 2014 HealthyCare. All rights reserved.
+*/
+"Personal Diaries" = "Personal Diaries";
+"History Overview" = "History Overview";
+"RecommendFood" = "Recommended Food";
+"Doctor Records" = "Dr's Records";
+"Today" = "Today";
+"Add or Modify you record" = "Add or Modify you record";
+"glycemiaAfterFood" = "After Food";
+"glycemiaBeforeFood" = "Before Food";
+"bloodPressure" = "Blood Pressure";
+"Sample Time" = "Sample Time";
+"Sample Value" = "Sample Value";
+"Total %d records" = "Total %d records";
+"Medical Date" = "Medical Time";
+"Take Photo" = "Take Photo";
+"Select Photo" = "Select Photo";
+"OK" = "OK";
+"Error" = "Error";
+"Device has no camera" = "Device has no camera";
+"After food" = "After Food";
+"Before food" = "Before Food";

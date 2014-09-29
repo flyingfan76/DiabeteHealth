@@ -36,6 +36,7 @@
 		6E3DFEE219D5565A00ACF40C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */; };
 		6E3DFEEA19D952CB00ACF40C /* bloodpressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DFEE919D952CB00ACF40C /* bloodpressure.png */; };
 		6E3DFEEC19D955A100ACF40C /* gi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DFEEB19D955A100ACF40C /* gi.png */; };
+		6E3DFEF019D95A3500ACF40C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E3DFEF219D95A3500ACF40C /* Localizable.strings */; };
 		6E3E571919762E90000398CD /* CFBMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571819762E90000398CD /* CFBMIViewController.m */; };
 		6E3E571B197632BB000398CD /* BMIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E571A197632BB000398CD /* BMIPage.html */; };
 		6E3E57201976744B000398CD /* CFKPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571F1976744B000398CD /* CFKPIViewController.m */; };
@@ -84,7 +85,6 @@
 		6E5942D719D14A7600AA0CEF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E5942D619D14A7600AA0CEF /* Settings.bundle */; };
 		6E5942DB19D14D4900AA0CEF /* CFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5942DA19D14D4900AA0CEF /* CFSettingsViewController.m */; };
 		6E5942DF19D1509D00AA0CEF /* Settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5942DE19D1509D00AA0CEF /* Settings-icon.png */; };
-		6E71915B19C68B9500BEB144 /* cfString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E71915D19C68B9500BEB144 /* cfString.strings */; };
 		6EA977621985F19300DA9B9A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA977611985F19300DA9B9A /* CoreData.framework */; };
 		6EA978321989E23900DA9B9A /* CFGlycemiaModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA978311989E23900DA9B9A /* CFGlycemiaModifyViewController.m */; };
 		6EA97836198B94B500DA9B9A /* cfHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97835198B94B500DA9B9A /* cfHistoryViewController.m */; };
@@ -256,6 +256,9 @@
 		6E3DFED819D5565A00ACF40C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6E3DFEE919D952CB00ACF40C /* bloodpressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodpressure.png; sourceTree = "<group>"; };
 		6E3DFEEB19D955A100ACF40C /* gi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gi.png; sourceTree = "<group>"; };
+		6E3DFEF119D95A3500ACF40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E3DFEF319D95A3B00ACF40C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E3DFEF419D95A3C00ACF40C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6E3E571719762E90000398CD /* CFBMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFBMIViewController.h; sourceTree = "<group>"; };
 		6E3E571819762E90000398CD /* CFBMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFBMIViewController.m; sourceTree = "<group>"; };
 		6E3E571A197632BB000398CD /* BMIPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BMIPage.html; sourceTree = "<group>"; };
@@ -327,8 +330,6 @@
 		6E71915819C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		6E71915919C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		6E71915A19C68AC300BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		6E71915C19C68B9500BEB144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/cfString.strings; sourceTree = "<group>"; };
-		6E71915E19C68BAA00BEB144 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/cfString.strings"; sourceTree = "<group>"; };
 		6E71915F19C68E8D00BEB144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
 		6EA977611985F19300DA9B9A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6EA978301989E23900DA9B9A /* CFGlycemiaModifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGlycemiaModifyViewController.h; sourceTree = "<group>"; };
@@ -848,8 +849,8 @@
 		6EA978751993519600DA9B9A /* stringresource */ = {
 			isa = PBXGroup;
 			children = (
-				6E71915D19C68B9500BEB144 /* cfString.strings */,
 				6EA978781993524900DA9B9A /* utilities.h */,
+				6E3DFEF219D95A3500ACF40C /* Localizable.strings */,
 			);
 			name = stringresource;
 			path = ..;
@@ -1159,7 +1160,6 @@
 				6EA97866199233E800DA9B9A /* japanese_noodle_with_pork.jpg in Resources */,
 				6EB4BB06196BE89700073FA5 /* Images.xcassets in Resources */,
 				6E59421319D10B1500AA0CEF /* clinic3.png in Resources */,
-				6E71915B19C68B9500BEB144 /* cfString.strings in Resources */,
 				6E59421D19D10D7E00AA0CEF /* gauge5.png in Resources */,
 				6E3E571B197632BB000398CD /* BMIPage.html in Resources */,
 				6E25489019ADDF9700D4F59A /* addPhoto.png in Resources */,
@@ -1170,6 +1170,7 @@
 				6E59421B19D10D0C00AA0CEF /* hot.png in Resources */,
 				6ECF1BA51977AD090015DEFA /* KPIPage.html in Resources */,
 				6E59424019D1269000AA0CEF /* Icon@2x.png in Resources */,
+				6E3DFEF019D95A3500ACF40C /* Localizable.strings in Resources */,
 				6EB4BAFE196BE89700073FA5 /* Main_iPhone.storyboard in Resources */,
 				6EA97864199233E800DA9B9A /* hamburger.jpg in Resources */,
 				6EA97860199233E800DA9B9A /* full_breakfast.jpg in Resources */,
@@ -1294,13 +1295,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6E71915D19C68B9500BEB144 /* cfString.strings */ = {
+		6E3DFEF219D95A3500ACF40C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E71915C19C68B9500BEB144 /* en */,
-				6E71915E19C68BAA00BEB144 /* zh-Hans */,
+				6E3DFEF119D95A3500ACF40C /* Base */,
+				6E3DFEF319D95A3B00ACF40C /* en */,
+				6E3DFEF419D95A3C00ACF40C /* zh-Hans */,
 			);
-			name = cfString.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		6EB4BAF3196BE89700073FA5 /* InfoPlist.strings */ = {
