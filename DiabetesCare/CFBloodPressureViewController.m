@@ -8,7 +8,7 @@
 
 #import "CFBloodPressureViewController.h"
 #import "CFBloodPressureTableCell.h"
-#import "cfAjaxURLProtocol.h"
+//#import "cfAjaxURLProtocol.h"
 #import "cfAppDelegate.h"
 #import "TodayRecord.h"
 #import "CFBloodPressureModifyViewController.h"

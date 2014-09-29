@@ -8,7 +8,7 @@
 
 #import "CFKPIViewController.h"
 #import "CFKPIGlycemiaTableCell.h"
-#import "cfAjaxURLProtocol.h"
+//#import "cfAjaxURLProtocol.h"
 #import "cfAppDelegate.h"
 #import "TodayRecord.h"
 #import "CFGlycemiaModifyViewController.h"

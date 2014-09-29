@@ -40,7 +40,6 @@
 		6E3E571919762E90000398CD /* CFBMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571819762E90000398CD /* CFBMIViewController.m */; };
 		6E3E571B197632BB000398CD /* BMIPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E571A197632BB000398CD /* BMIPage.html */; };
 		6E3E57201976744B000398CD /* CFKPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E571F1976744B000398CD /* CFKPIViewController.m */; };
-		6E3E572A19779E4D000398CD /* cfAjaxURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E572919779E4D000398CD /* cfAjaxURLProtocol.m */; };
 		6E59421219D10B1500AA0CEF /* blood14.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E59420C19D10B1500AA0CEF /* blood14.png */; };
 		6E59421319D10B1500AA0CEF /* clinic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E59420D19D10B1500AA0CEF /* clinic3.png */; };
 		6E59421419D10B1500AA0CEF /* cutlery6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E59420E19D10B1500AA0CEF /* cutlery6.png */; };
@@ -112,8 +111,6 @@
 		6EA9786F199233E800DA9B9A /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97855199233E800DA9B9A /* Recipe.m */; };
 		6EA97870199233E800DA9B9A /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97857199233E800DA9B9A /* RecipeDetailViewController.m */; };
 		6EA97871199233E800DA9B9A /* RecipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA97859199233E800DA9B9A /* RecipeTableCell.m */; };
-		6EA97872199233E800DA9B9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785B199233E800DA9B9A /* about.html */; };
-		6EA97873199233E800DA9B9A /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EA9785C199233E800DA9B9A /* about.jpg */; };
 		6EA9F31E19D2A4450030490F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA9F31D19D2A4450030490F /* iAd.framework */; };
 		6EB4BAEB196BE89600073FA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEA196BE89600073FA5 /* Foundation.framework */; };
 		6EB4BAED196BE89700073FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4BAEC196BE89700073FA5 /* CoreGraphics.framework */; };
@@ -264,8 +261,6 @@
 		6E3E571A197632BB000398CD /* BMIPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BMIPage.html; sourceTree = "<group>"; };
 		6E3E571E1976744B000398CD /* CFKPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKPIViewController.h; sourceTree = "<group>"; };
 		6E3E571F1976744B000398CD /* CFKPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKPIViewController.m; sourceTree = "<group>"; };
-		6E3E572819779E4D000398CD /* cfAjaxURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfAjaxURLProtocol.h; sourceTree = "<group>"; };
-		6E3E572919779E4D000398CD /* cfAjaxURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cfAjaxURLProtocol.m; sourceTree = "<group>"; };
 		6E59420C19D10B1500AA0CEF /* blood14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood14.png; sourceTree = "<group>"; };
 		6E59420D19D10B1500AA0CEF /* clinic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinic3.png; sourceTree = "<group>"; };
 		6E59420E19D10B1500AA0CEF /* cutlery6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutlery6.png; sourceTree = "<group>"; };
@@ -364,8 +359,6 @@
 		6EA97857199233E800DA9B9A /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		6EA97858199233E800DA9B9A /* RecipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableCell.h; sourceTree = "<group>"; };
 		6EA97859199233E800DA9B9A /* RecipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableCell.m; sourceTree = "<group>"; };
-		6EA9785B199233E800DA9B9A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
-		6EA9785C199233E800DA9B9A /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		6EA978781993524900DA9B9A /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
 		6EA97948199B0EC200DA9B9A /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = "tapkulibrary-master/src/TapkuLibrary.xcodeproj"; sourceTree = "<group>"; };
 		6EA9F31D19D2A4450030490F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -630,15 +623,6 @@
 			name = highcharts;
 			sourceTree = "<group>";
 		};
-		6E3E572719779E06000398CD /* customizedProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				6E3E572819779E4D000398CD /* cfAjaxURLProtocol.h */,
-				6E3E572919779E4D000398CD /* cfAjaxURLProtocol.m */,
-			);
-			name = customizedProtocol;
-			sourceTree = "<group>";
-		};
 		6E59422219D1265A00AA0CEF /* icon_launchimage */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,7 +775,6 @@
 				6EA97857199233E800DA9B9A /* RecipeDetailViewController.m */,
 				6EA97858199233E800DA9B9A /* RecipeTableCell.h */,
 				6EA97859199233E800DA9B9A /* RecipeTableCell.m */,
-				6EA9785A199233E800DA9B9A /* resources */,
 				6EA9783E1992304B00DA9B9A /* cfRecommendedFoodedTableViewController.h */,
 				6EA9783F1992304B00DA9B9A /* cfRecommendedFoodedTableViewController.m */,
 			);
@@ -821,15 +804,6 @@
 				6EA97853199233E800DA9B9A /* white_chocolate_donut.jpg */,
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		6EA9785A199233E800DA9B9A /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				6EA9785B199233E800DA9B9A /* about.html */,
-				6EA9785C199233E800DA9B9A /* about.jpg */,
-			);
-			path = resources;
 			sourceTree = "<group>";
 		};
 		6EA9787419934A3800DA9B9A /* image */ = {
@@ -929,7 +903,6 @@
 				6EA9783D19922F8C00DA9B9A /* recommendedFoodScene */,
 				6EA97833198B949100DA9B9A /* historyScene */,
 				6EA9782C1989DEB800DA9B9A /* editAndAddScene */,
-				6E3E572719779E06000398CD /* customizedProtocol */,
 				6E3E572319777287000398CD /* highcharts */,
 				6E3E57161975330B000398CD /* bloodpressueScene */,
 				6E3E5715197532BC000398CD /* kpiScene */,
@@ -1132,7 +1105,6 @@
 				6ECF1BAD1977B4D10015DEFA /* highcharts.js in Resources */,
 				6E3DFEB919D405C300ACF40C /* README.txt in Resources */,
 				6E59423819D1269000AA0CEF /* Icon-72@2x.png in Resources */,
-				6EA97872199233E800DA9B9A /* about.html in Resources */,
 				6EA97862199233E800DA9B9A /* ham_and_cheese_panini.jpg in Resources */,
 				6EA9786E199233E800DA9B9A /* white_chocolate_donut.jpg in Resources */,
 				6EA9785D199233E800DA9B9A /* angry_birds_cake.jpg in Resources */,
@@ -1192,7 +1164,6 @@
 				6E59421619D10B1500AA0CEF /* plate13.png in Resources */,
 				6EDB47E7199B193500BCF1C3 /* TapkuLibrary.bundle in Resources */,
 				6EA97869199233E800DA9B9A /* photo-frame.png in Resources */,
-				6EA97873199233E800DA9B9A /* about.jpg in Resources */,
 				6E59423419D1269000AA0CEF /* Icon-40@2x.png in Resources */,
 				6E59423519D1269000AA0CEF /* Icon-60.png in Resources */,
 			);
@@ -1258,7 +1229,6 @@
 				6EA97871199233E800DA9B9A /* RecipeTableCell.m in Sources */,
 				6E5942CE19D149AA00AA0CEF /* IASKSettingsStoreUserDefaults.m in Sources */,
 				6EDB47F619A5A6E200BCF1C3 /* CFBloodPressureModifyViewController.m in Sources */,
-				6E3E572A19779E4D000398CD /* cfAjaxURLProtocol.m in Sources */,
 				6ECD415C1974FF3C009C6BD1 /* CFDailyRecordTableViewController.m in Sources */,
 				6E25487319AC5B1800D4F59A /* CFEditMedicalRecordViewController.m in Sources */,
 				6E5942CF19D149AA00AA0CEF /* IASKSpecifier.m in Sources */,
