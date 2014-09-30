@@ -60,6 +60,8 @@
         
     }
     
+    self.myBloodPressure.delegate = self;
+    
     self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
@@ -221,8 +223,32 @@
         return YES;
     }
     
+    if (101 == textField.tag){
+        return YES;
+    }
+    
     return NO;
     
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if( 101 == textField.tag) {
+        NSCharacterSet* numberCharSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+        for (int i = 0; i < [string length]; ++i)
+        {
+            unichar c = [string characterAtIndex:i];
+            if (![numberCharSet characterIsMember:c])
+            {
+                return NO;
+            }
+        }
+        
+        return YES;
+        
+    }
+    
+    return NO;
 }
 
 -(void)createInputAccessoryView{

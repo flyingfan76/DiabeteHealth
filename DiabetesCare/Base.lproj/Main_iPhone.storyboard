@@ -1226,7 +1226,7 @@
                                     <outlet property="delegate" destination="7Ig-pP-xIy" id="Cbp-zG-VZK"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GG7-8I-XOr">
+                            <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GG7-8I-XOr">
                                 <rect key="frame" x="125" y="140" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1262,7 +1262,7 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="myBloodPressure" destination="GG7-8I-XOr" id="KB5-Ij-sqV"/>
+                        <outlet property="myBloodPressure" destination="GG7-8I-XOr" id="sfz-8P-4sQ"/>
                         <outlet property="myDateTime" destination="AEh-Rb-yKb" id="uhT-Ld-TSZ"/>
                     </connections>
                 </viewController>
