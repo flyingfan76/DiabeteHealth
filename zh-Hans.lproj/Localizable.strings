@@ -25,3 +25,224 @@
 "Device has no camera" = "没有相机";
 "After food" = "餐后";
 "Before food" = "餐前";
+
+//food 1 - Tuna
+"Tuna Steak" = "吞拿鱼扒配杏果盘";
+//food - ingredients
+"Tuna Steak 1" = "1块金枪鱼牛排（约150克";
+"Tuna Steak 2" = "半块小洋葱";
+"Tuna Steak 3" = "8块杏仁干";
+"Tuna Steak 4" = "1块土豆";
+"Tuna Steak 5" = "1汤匙白兰地";
+"Tuna Steak 6" = "1汤匙香醋";
+"Tuna Steak 7" = "2汤匙特级初榨橄榄油";
+"Tuna Steak 8" = "半茶匙干麝香草";
+"Tuna Steak 9" = "现磨胡椒";
+"Tuna Steak 10" = "几片生菜叶";
+
+
+
+//food 2 - Mushroom risotto
+"Mushroom Risotto" = "蘑菇烩饭";
+//food - ingredients
+"Mushroom Risotto 1" = "1汤匙干蘑菇";
+"Mushroom Risotto 2" = "2汤匙橄榄油";
+"Mushroom Risotto 3" = "洋葱1个，切碎";
+"Mushroom Risotto 4" = "2蒜瓣";
+"Mushroom Risotto 5" = "350克/升12盎司香米";
+"Mushroom Risotto 6" = "1.2升/2品脱热蔬菜汤";
+"Mushroom Risotto 7" = "盐和胡椒";
+"Mushroom Risotto 8" = "25g黄油";
+
+//food 3 - Roasted Mushroom & Lentil Cakes
+"Roasted Mushroom" = "烤蘑菇和扁豆蛋糕";
+//food - ingredients
+"Roasted Mushroom 1" = "100G干红扁豆";
+"Roasted Mushroom 2" = "150克栗蘑,75克核桃，剁碎";
+"Roasted Mushroom 3" = "1个中等大小的洋葱";
+"Roasted Mushroom 4" = "1个鸡蛋";
+"Roasted Mushroom 5" = "1汤匙辣酱油";
+"Roasted Mushroom 6" = "2汤匙酱油";
+"Roasted Mushroom 7" = "1茶匙混合香草";
+
+
+
+//food 4 - Lemon and Parsley Chicken
+"Lemon Chicken" = "柠檬香菜鸡";
+//food - ingredients
+"Lemon Chicken 1" = "3块鸡脯肉";
+"Lemon Chicken 2" = "半个柠檬";
+"Lemon Chicken 3" = "新鲜欧芹";
+"Lemon Chicken 4" = "大蒜3瓣";
+"Lemon Chicken 5" = "1汤匙橄榄油";
+"Lemon Chicken 6" = "半茶匙盐";
+"Lemon Chicken 7" = "现磨胡椒";
+"Lemon Chicken 8" = "3支鸡尾酒";
+
+
+//food 5 - Grilled Dill Salmon with Olive Sauce
+"Grilled Salmon" = "烤三文鱼配橄榄酱";
+//food - ingredients
+"Grilled Salmon 1" = "3片中等大小的鲑鱼片";
+"Grilled Salmon 2" = "1个柠檬";
+"Grilled Salmon 3" = "2茶匙切碎的新鲜干莳萝";
+"Grilled Salmon 4" = "1杯橄榄油";
+"Grilled Salmon 5" = "一把新鲜香菜";
+"Grilled Salmon 6" = "300克天然酸奶";
+"Grilled Salmon 7" = "一撮盐";
+
+
+//food 6 - Chicken and Chickpea Casserole
+"Chicken Casserole" = "砂锅鸡";
+//food - ingredients
+"Chicken Casserole 1" = "3块鸡胸脯";
+"Chicken Casserole 2" = "1个中等大小的红洋葱";
+"Chicken Casserole 3" = "1个大萝卜";
+"Chicken Casserole 4" = "400克罐头鹰嘴豆";
+"Chicken Casserole 5" = "甜玉米200克";
+"Chicken Casserole 6" = "300克番茄沙司";
+"Chicken Casserole 7" = "半大匙肉汤";
+"Chicken Casserole 8" = "5勺辣椒酱";
+"Chicken Casserole 9" = "1茶匙柠檬汁";
+"Chicken Casserole 10" = "辣椒";
+
+
+//food 7 - Vegetarian Chocolate Chili
+"Vegetarian Chili" = "素食巧克力辣椒";
+//food - ingredients
+"Vegetarian Chili 1" = "200克绿豆";
+"Vegetarian Chili 2" = "400克罐装芸豆";
+"Vegetarian Chili 3" = "8杯蘑菇";
+"Vegetarian Chili 4" = "200克甜玉米";
+"Vegetarian Chili 5" = "辣椒（适量";
+"Vegetarian Chili 6" = "400克西红柿罐头";
+"Vegetarian Chili 7" = "4汤匙番茄酱";
+"Vegetarian Chili 8" = "1.5大匙，香醋";
+"Vegetarian Chili 9" = "一把新鲜香草";
+"Vegetarian Chili 10" = "1.5汤匙可可粉";
+
+//food 8 - Pork, Apple and Sage Soup
+"Pork Soap" = " 猪肉，苹果和鼠尾草汤";
+//food - ingredients
+"Pork Soap 1" = "半个洋葱";
+"Pork Soap 2" = "1个苹果";
+"Pork Soap 3" = "1块猪扒";
+"Pork Soap 4" = "1大匙，肉汤或其他蔬菜汤";
+"Pork Soap 5" = "1茶匙鲜或干的鼠尾草";
+"Pork Soap 6" = "1汤匙雪利酒";
+"Pork Soap 7" = "辣椒";
+"Pork Soap 8" = "500毫升沸水";
+
+//food 9 - Tuscan Pasta Bake (suitable for vegetarians)
+"Pasta Bake" = "托斯卡纳面食烘烤（适合素食者";
+//food - ingredients
+"Pasta Bake 1" = "200克面团";
+"Pasta Bake 2" = "3支芹菜";
+"Pasta Bake 3" = "400克四季豆";
+"Pasta Bake 4" = "400克罐装番茄";
+"Pasta Bake 5" = "四分之一瓶红酒";
+"Pasta Bake 6" = "1份蔬菜高汤";
+"Pasta Bake 7" = "50克黑橄榄油";
+"Pasta Bake 8" = "1茶匙调味料";
+"Pasta Bake 9" = "半茶匙盐";
+
+
+//food 10 - Spiced Apricot Turkey
+"Apricot Turkey" = "五香杏仁火鸡";
+//food - ingredients
+"Apricot Turkey 1" = "4块火鸡胸脯";
+"Apricot Turkey 2" = "一个橘子皮";
+"Apricot Turkey 3" = "杏干225克";
+"Apricot Turkey 4" = "250G不加糖的酸奶";
+"Apricot Turkey 5" = "小茴香1汤匙";
+"Apricot Turkey 6" = "姜黄2茶勺";
+"Apricot Turkey 7" = "香菜2茶勺";
+"Apricot Turkey 8" = "2瓣大蒜，粉碎";
+"Apricot Turkey 9" = "2撮盐";
+"Apricot Turkey 10" = "辣椒";
+
+//food 11 - Simple Tomato and Basil Soup
+"Basil Soup" = "番茄紫苏汤";
+//food - ingredients
+"Basil Soup 1" = "1个中等大小的洋葱";
+"Basil Soup 2" = "1瓣蒜";
+"Basil Soup 3" = "2汤匙橄榄油";
+"Basil Soup 4" = "3个西红柿";
+"Basil Soup 5" = "400克罐装西红柿";
+"Basil Soup 6" = "5片紫苏叶";
+"Basil Soup 7" = "水150毫升";
+"Basil Soup 8" = "1茶匙盐";
+"Basil Soup 9" = "辣椒";
+
+//food 12 - Red Wine Beef Stew
+"Wine Beef" = "红酒炖牛肉";
+//food - ingredients
+"Wine Beef 1" = "450克瘦牛肉";
+"Wine Beef 2" = "4根胡萝卜";
+"Wine Beef 3" = "7支芹菜";
+"Wine Beef 4" = "5瓣大蒜";
+"Wine Beef 5" = "半瓶红酒";
+"Wine Beef 6" = "2汤匙香醋";
+"Wine Beef 7" = "一把新鲜紫苏";
+"Wine Beef 8" = "1瓶子";
+"Wine Beef 9" = "盐和胡椒";
+
+
+//food 13 - Puy Lentil Quinoa
+"Lentil Quinoa" = "扁豆";
+//food - ingredients
+"Lentil Quinoa 1" = "120克扁豆";
+"Lentil Quinoa 2" = "1个大洋葱";
+"Lentil Quinoa 3" = "150g藜麦";
+"Lentil Quinoa 4" = "1份蔬菜高汤";
+"Lentil Quinoa 5" = "400ml水";
+
+
+//food 14 - Pasta with Italian Sauce
+"Italian Pasta" = "意大利肉酱面";
+//food - ingredients
+"Italian Pasta 1" = "160克培根";
+"Italian Pasta 2" = "2个中等大小的洋葱";
+"Italian Pasta 3" = "切碎的西红柿400克";
+"Italian Pasta 4" = "200克冷冻豌豆";
+"Italian Pasta 5" = "2汤匙番茄酱";
+"Italian Pasta 6" = "2瓣大蒜";
+"Italian Pasta 7" = "1汤匙香醋";
+"Italian Pasta 8" = "2汤匙辣酱油";
+"Italian Pasta 9" = "2茶匙混合意大利香草";
+"Italian Pasta 10" = "盐3大把";
+"Italian Pasta 11" = "辣椒";
+"Italian Pasta 12" = "1汤匙橄榄油";
+"Italian Pasta 13" = "250克干面条";
+
+//food 15 - Vegetable Curry
+"Vegetable Curry" = "蔬菜咖喱";
+//food - ingredients
+"Vegetable Curry 1" = "1汤匙橄榄油";
+"Vegetable Curry 2" = "洋葱1个，切碎";
+"Vegetable Curry 3" = "2瓣蒜";
+"Vegetable Curry 4" = "2.5大匙，咖喱粉";
+"Vegetable Curry 5" = "2夸脱热水";
+
+//food 16 - Instant Noodle with Egg
+"Instant Noodle" = "速食鸡蛋面";
+//food - ingredients
+"Instant Noodle 1" = "1包面";
+"Instant Noodle 2" = "2蛋";
+
+
+//food 17 - Noodle with BBQ Pork
+"BBQ Noodle" = "叉烧面";
+//food - ingredients
+"BBQ Noodle 1" = "1包面";
+"BBQ Noodle 2" = "叉烧若干";
+"BBQ Noodle 3" = "盐和胡椒";
+
+
+//food 18 - Japanese Noodle with Pork
+"Japanese Noodle" = "日本猪肉拉面";
+//food - ingredients
+"Japanese Noodle 1" = "1包日本面条";
+"Japanese Noodle 2" = "2根葱";
+"Japanese Noodle 3" = "2瓣大蒜，切碎";
+"Japanese Noodle 4" = "4块去骨里脊猪排";

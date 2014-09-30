@@ -25,3 +25,225 @@
 "Device has no camera" = "Device has no camera";
 "After food" = "After Food";
 "Before food" = "Before Food";
+
+//food 1 - Tuna
+"Tuna Steak" = "Tuna Steak with Apricot Compote";
+//food - ingredients
+"Tuna Steak 1" = "1 tuna steak (approx. 150g)";
+"Tuna Steak 2" = "half small red onion";
+"Tuna Steak 3" = "8 dried apricots";
+"Tuna Steak 4" = "1 medium tomato";
+"Tuna Steak 5" = "1 tbsp brandy";
+"Tuna Steak 6" = "1 tbsp balsamic vinegar";
+"Tuna Steak 7" = "2 tbsp extra virgin olive oil";
+"Tuna Steak 8" = "half teaspoon dried thyme";
+"Tuna Steak 9" = "freshly ground pepper";
+"Tuna Steak 10" = "a few leaves of crisp lettuce";
+
+
+
+//food 2 - Mushroom risotto
+"Mushroom Risotto" = "Mushroom Risotto";
+//food - ingredients
+"Mushroom Risotto 1" = "1 tbsp dried porcini mushrooms";
+"Mushroom Risotto 2" = "2 tbsp olive oil";
+"Mushroom Risotto 3" = "1 onion, chopped";
+"Mushroom Risotto 4" = "2 garlic cloves";
+"Mushroom Risotto 5" = "350g/12oz arborio rice";
+"Mushroom Risotto 6" = "1.2 litres/2 pints hot vegetable stock";
+"Mushroom Risotto 7" = "salt and pepper";
+"Mushroom Risotto 8" = "25g/1oz butter";
+
+//food 3 - Roasted Mushroom & Lentil Cakes
+"Roasted Mushroom" = "Roasted Mushroom & Lentil Cakes";
+//food - ingredients
+"Roasted Mushroom 1" = "half cup/100g dried red lentils";
+"Roasted Mushroom 2" = "2 cups/150g chestnut mushrooms/crimini mushrooms, sliced 2/3 cup/75g walnuts, chopped";
+"Roasted Mushroom 3" = "1 medium onion";
+"Roasted Mushroom 4" = "1 egg";
+"Roasted Mushroom 5" = "1 tablespoon Worcestershire sauce";
+"Roasted Mushroom 6" = "2 tablespoons soy sauce";
+"Roasted Mushroom 7" = "1 teaspoon mixed herbs/italian seasoning";
+
+
+
+//food 4 - Lemon and Parsley Chicken
+"Lemon Chicken" = "Lemon and Parsley Chicken";
+//food - ingredients
+"Lemon Chicken 1" = "3 medium chicken breasts";
+"Lemon Chicken 2" = "half lemon";
+"Lemon Chicken 3" = "a large handful of fresh parsley";
+"Lemon Chicken 4" = "3 cloves of garlic";
+"Lemon Chicken 5" = "1 tablespoon olive oil";
+"Lemon Chicken 6" = "half teaspoon salt";
+"Lemon Chicken 7" = "freshly ground pepper";
+"Lemon Chicken 8" = "3 cocktail sticks";
+
+
+//food 5 - Grilled Dill Salmon with Olive Sauce
+"Grilled Salmon" = "Grilled Dill Salmon with Olive Sauce";
+//food - ingredients
+"Grilled Salmon 1" = "3 medium sized salmon filets";
+"Grilled Salmon 2" = "1 lemon";
+"Grilled Salmon 3" = "2 teaspoons chopped fresh or dried dill";
+"Grilled Salmon 4" = "1 cup olives/200g black olives";
+"Grilled Salmon 5" = "a handful of fresh parsley";
+"Grilled Salmon 6" = "1¼ cups/300g natural yogurt";
+"Grilled Salmon 7" = "a pinch of salt";
+
+
+//food 6 - Chicken and Chickpea Casserole
+"Chicken Casserole" = "Chicken and Chickpea Casserole";
+//food - ingredients
+"Chicken Casserole 1" = "3 medium sized chicken breasts";
+"Chicken Casserole 2" = "1 medium red onion";
+"Chicken Casserole 3" = "1 large/2 small carrots";
+"Chicken Casserole 4" = "½ of a 15oz/400g can of chickpeas (garbanzo beans)";
+"Chicken Casserole 5" = "1¼ cups/200g sweetcorn";
+"Chicken Casserole 6" = "1¼ cups/300g passata (sieved tomatoes) ";
+"Chicken Casserole 7" = "½ tablespoon bouillon or other stock";
+"Chicken Casserole 8" = "5 dashes of tabasco sauce";
+"Chicken Casserole 9" = "1 teaspoon lemon juice";
+"Chicken Casserole 10" = "pepper";
+
+
+//food 7 - Vegetarian Chocolate Chili
+"Vegetarian Chili" = "Vegetarian Chocolate Chili";
+//food - ingredients
+"Vegetarian Chili 1" = "1 cup/7oz/200g green beans";
+"Vegetarian Chili 2" = "14oz/400g canned kidney beans";
+"Vegetarian Chili 3" = "15 button mushrooms or 8 cup mushrooms";
+"Vegetarian Chili 4" = "1¼ cups/7oz/200g sweetcorn";
+"Vegetarian Chili 5" = "1 chili (to taste)";
+"Vegetarian Chili 6" = "14oz/400g canned tomatoes";
+"Vegetarian Chili 7" = "4 tablespoons tomato puree";
+"Vegetarian Chili 8" = "1½ tablespoon balsamic vinegar";
+"Vegetarian Chili 9" = "2 teaspoons dry mixed herbs or a handful of fresh herbs";
+"Vegetarian Chili 10" = "1½ tablespoons cocoa powder";
+
+//food 8 - Pork, Apple and Sage Soup
+"Pork Soap" = "Pork, Apple and Sage Soup";
+//food - ingredients
+"Pork Soap 1" = "½ onion";
+"Pork Soap 2" = "1 eating apple";
+"Pork Soap 3" = "1 pork chop";
+"Pork Soap 4" = "1 tablespoon bouillon or other vegetable stock";
+"Pork Soap 5" = "1 teaspoon fresh or dried sage";
+"Pork Soap 6" = "1 tablespoon sherry";
+"Pork Soap 7" = "pepper";
+"Pork Soap 8" = "1 pint/500ml boiling water";
+
+//food 9 - Tuscan Pasta Bake (suitable for vegetarians)
+"Pasta Bake" = "Tuscan Pasta Bake (suitable for vegetarians)";
+//food - ingredients
+"Pasta Bake 1" = "7oz/200g pasta twirls";
+"Pasta Bake 2" = "3 sticks of celery";
+"Pasta Bake 3" = "14oz/400g can borlotti beans, drained";
+"Pasta Bake 4" = "14oz/400g can of tomatoes";
+"Pasta Bake 5" = "¼ bottle of red wine";
+"Pasta Bake 6" = "1 vegetable stock cube";
+"Pasta Bake 7" = "2oz/50g black olives";
+"Pasta Bake 8" = "1 teaspoon dried mixed herbs";
+"Pasta Bake 9" = "½ teaspoon salt";
+
+
+//food 10 - Spiced Apricot Turkey
+"Apricot Turkey" = "Spiced Apricot Turkey";
+//food - ingredients
+"Apricot Turkey 1" = "4 turkey breasts";
+"Apricot Turkey 2" = "rind of one orange, thinly shreded";
+"Apricot Turkey 3" = "8oz/225g of dried apricots";
+"Apricot Turkey 4" = "250g/9oz/1 cup unsweetened yogurt";
+"Apricot Turkey 5" = "1 table spoon of ground cumin";
+"Apricot Turkey 6" = "2 tea spoon of ground turmeric";
+"Apricot Turkey 7" = "2 tea spoon of ground coriander";
+"Apricot Turkey 8" = "2 cloves of garlic, crushed";
+"Apricot Turkey 9" = "2 pinches salt";
+"Apricot Turkey 10" = "pepper";
+
+//food 11 - Simple Tomato and Basil Soup
+"Basil Soup" = "Simple Tomato and Basil Soup";
+//food - ingredients
+"Basil Soup 1" = "1 medium sized onion";
+"Basil Soup 2" = "1 clove garlic";
+"Basil Soup 3" = "2 tablespoons olive oil";
+"Basil Soup 4" = "8 cherry tomatoes/3 vine tomatoes";
+"Basil Soup 5" = "14oz/400g can plum tomatoes";
+"Basil Soup 6" = "1 teaspoon dried basil or 5 leaves of fresh basil";
+"Basil Soup 7" = "¼ pint/150ml water";
+"Basil Soup 8" = "1 teaspoon salt";
+"Basil Soup 9" = "pepper";
+
+//food 12 - Red Wine Beef Stew
+"Wine Beef" = "Red Wine Beef Stew";
+//food - ingredients
+"Wine Beef 1" = "450g lean beef";
+"Wine Beef 2" = "4 carrots";
+"Wine Beef 3" = "7 sticks of celery";
+"Wine Beef 4" = "5 cloves garlic";
+"Wine Beef 5" = "½ bottle of red wine";
+"Wine Beef 6" = "2 tablespoons balsamic vinegar";
+"Wine Beef 7" = "handful fresh basil";
+"Wine Beef 8" = "1 stock cube";
+"Wine Beef 9" = "ground salt and pepper";
+
+
+//food 13 - Puy Lentil Quinoa
+"Lentil Quinoa" = "Puy Lentil Quinoa";
+//food - ingredients
+"Lentil Quinoa 1" = "120g/1 cup puy lentils";
+"Lentil Quinoa 2" = "2 small/1 large onion";
+"Lentil Quinoa 3" = "150g/1 cup quinoa";
+"Lentil Quinoa 4" = "1 vegetable stock cube/1 tbsp bouillon";
+"Lentil Quinoa 5" = "400ml/¾ pint water";
+
+
+//food 14 - Pasta with Italian Sauce
+"Italian Pasta" = "Pasta with Italian Sauce";
+//food - ingredients
+"Italian Pasta 1" = "6oz/160g bacon (smoked or unsmoked)";
+"Italian Pasta 2" = "2 medium sized onions";
+"Italian Pasta 3" = "14oz/400g tin of chopped plum tomatoes";
+"Italian Pasta 4" = "7oz/200g frozen peas";
+"Italian Pasta 5" = "2 table spoons tomato puree";
+"Italian Pasta 6" = "2 cloves of garlic";
+"Italian Pasta 7" = "1 table spoon balsamic vinegar";
+"Italian Pasta 8" = "2 teaspoons spoon worcestershire sauce";
+"Italian Pasta 9" = "2 teaspoons mixed italian herbs";
+"Italian Pasta 10" = "3 large pinches of salt";
+"Italian Pasta 11" = "pepper";
+"Italian Pasta 12" = "1 table spoon olive oil";
+"Italian Pasta 13" = "9oz/250g dried pasta";
+
+//food 15 - Vegetable Curry
+"Vegetable Curry" = "Vegetable Curry";
+//food - ingredients
+"Vegetable Curry 1" = "1 tablespoon olive oil";
+"Vegetable Curry 2" = "1 onion, chopped";
+"Vegetable Curry 3" = "2 cloves garlic";
+"Vegetable Curry 4" = "2 1/2 tablespoons curry powder";
+"Vegetable Curry 5" = "2 quarts hot water";
+
+//food 16 - Instant Noodle with Egg
+"Instant Noodle" = "Instant Noodle with Egg";
+//food - ingredients
+"Instant Noodle 1" = "1 pack of Instant Noodle";
+"Instant Noodle 2" = "2 eggs";
+
+
+//food 17 - Noodle with BBQ Pork
+"BBQ Noodle" = "Noodle with BBQ Pork";
+//food - ingredients
+"BBQ Noodle 1" = "1 pack of Instant Noodle";
+"BBQ Noodle 2" = "BBQ pork";
+"BBQ Noodle 3" = "Salt and Pepper";
+
+
+//food 18 - Japanese Noodle with Pork
+"Japanese Noodle" = "Japanese Noodle with Pork";
+//food - ingredients
+"Japanese Noodle 1" = "1 pack of Japanese Noodle";
+"Japanese Noodle 2" = "2 green onions";
+"Japanese Noodle 3" = "2 garlic cloves, minced";
+"Japanese Noodle 4" = "4 boneless pork loin chops";
+

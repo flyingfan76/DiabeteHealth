@@ -1,96 +1,96 @@
 
 /* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "0ik-y3-Vmu"; */
-"0ik-y3-Vmu.title" = "Title";
+"0ik-y3-Vmu.title" = "标题";
 
 /* Class = "IBUIButton"; normalTitle = "Choose Photo"; ObjectID = "5VY-SX-JMh"; */
-"5VY-SX-JMh.normalTitle" = "Choose Photo";
+"5VY-SX-JMh.normalTitle" = "选择相片";
 
 /* Class = "IBUILabel"; text = "blood Pressure"; ObjectID = "7Zm-Cn-Jjf"; */
-"7Zm-Cn-Jjf.text" = "blood Pressure";
+"7Zm-Cn-Jjf.text" = "血压";
 
 /* Class = "IBUILabel"; text = "Ingredients"; ObjectID = "9ga-IO-LUG"; */
-"9ga-IO-LUG.text" = "Ingredients";
+"9ga-IO-LUG.text" = "成分";
 
 /* Class = "IBUIViewController"; title = "Recipe Detail View Controller"; ObjectID = "Ag1-zn-BKc"; */
-"Ag1-zn-BKc.title" = "Recipe Detail View Controller";
+"Ag1-zn-BKc.title" = "菜谱";
 
 /* Class = "IBUILabel"; text = "Glycemia(mg/dl)"; ObjectID = "D4Q-o8-4Gd"; */
-"D4Q-o8-4Gd.text" = "Glycemia(mg/dl)";
+"D4Q-o8-4Gd.text" = "血糖(mg/dl)";
 
 /* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "EBP-Ok-Crh"; */
-"EBP-Ok-Crh.title" = "Title";
+"EBP-Ok-Crh.title" = "标题";
 
 /* Class = "IBUILabel"; text = "empty"; ObjectID = "I8b-Gj-dQu"; */
-"I8b-Gj-dQu.text" = "empty";
+"I8b-Gj-dQu.text" = "空";
 
 /* Class = "IBUITextField"; text = "555"; ObjectID = "Ja3-gu-ETo"; */
 "Ja3-gu-ETo.text" = "555";
 
 /* Class = "IBUILabel"; text = "Before"; ObjectID = "Jf0-Jg-sGv"; */
-"Jf0-Jg-sGv.text" = "Before";
+"Jf0-Jg-sGv.text" = "餐前";
 
 /* Class = "IBUILabel"; text = "Sample Time"; ObjectID = "LiH-4v-1YA"; */
-"LiH-4v-1YA.text" = "Sample Time";
+"LiH-4v-1YA.text" = "取样时间";
 
 /* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "MP8-kG-Eb8"; */
-"MP8-kG-Eb8.title" = "Title";
+"MP8-kG-Eb8.title" = "标题";
 
 /* Class = "IBUILabel"; text = "RecipeName"; ObjectID = "OKt-NW-eAX"; */
-"OKt-NW-eAX.text" = "RecipeName";
+"OKt-NW-eAX.text" = "菜单名称";
 
 /* Class = "IBUISegmentedControl"; Ptz-51-T7l.segmentTitles[0] = "Before Food"; ObjectID = "Ptz-51-T7l"; */
-"Ptz-51-T7l.segmentTitles[0]" = "Before Food";
+"Ptz-51-T7l.segmentTitles[0]" = "餐前";
 
 /* Class = "IBUISegmentedControl"; Ptz-51-T7l.segmentTitles[1] = "After Food"; ObjectID = "Ptz-51-T7l"; */
-"Ptz-51-T7l.segmentTitles[1]" = "After Food";
+"Ptz-51-T7l.segmentTitles[1]" = "餐后";
 
 /* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "QAL-7g-Qud"; */
 "QAL-7g-Qud.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
 
 /* Class = "IBUILabel"; text = "Time"; ObjectID = "WEI-5t-Qb0"; */
-"WEI-5t-Qb0.text" = "Time";
+"WEI-5t-Qb0.text" = "时间";
 
 /* Class = "IBUILabel"; text = "After"; ObjectID = "XMj-er-v4L"; */
-"XMj-er-v4L.text" = "After";
+"XMj-er-v4L.text" = "餐后";
 
 /* Class = "IBUIButton"; normalTitle = "Take Photo"; ObjectID = "bkJ-UT-zbN"; */
-"bkJ-UT-zbN.normalTitle" = "Take Photo";
+"bkJ-UT-zbN.normalTitle" = "拍摄相片";
 
 /* Class = "IBUILabel"; text = "Preptime"; ObjectID = "bp0-SE-PCp"; */
-"bp0-SE-PCp.text" = "Preptime";
+"bp0-SE-PCp.text" = "准备时间";
 
 /* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "cCz-Ge-KD9"; */
-"cCz-Ge-KD9.title" = "Title";
+"cCz-Ge-KD9.title" = "标题";
 
 /* Class = "IBUILabel"; text = "Value"; ObjectID = "cHJ-F3-HWp"; */
-"cHJ-F3-HWp.text" = "Value";
+"cHJ-F3-HWp.text" = "值";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "g0F-zv-3Dn"; */
-"g0F-zv-3Dn.text" = "Label";
+"g0F-zv-3Dn.text" = "标签";
 
 /* Class = "IBUINavigationItem"; title = "record"; ObjectID = "iFT-yY-YlB"; */
-"iFT-yY-YlB.title" = "record";
+"iFT-yY-YlB.title" = "记录";
 
 /* Class = "IBUILabel"; text = "Sample Value"; ObjectID = "iX8-6f-kob"; */
-"iX8-6f-kob.text" = "Sample Value";
+"iX8-6f-kob.text" = "取样时间";
 
 /* Class = "IBUILabel"; text = "Sample Value"; ObjectID = "nL2-oX-a58"; */
-"nL2-oX-a58.text" = "Sample Value";
+"nL2-oX-a58.text" = "取样值";
 
 /* Class = "IBUILabel"; text = "empty"; ObjectID = "sQs-rI-TTi"; */
-"sQs-rI-TTi.text" = "empty";
+"sQs-rI-TTi.text" = "空";
 
 /* Class = "IBUILabel"; text = "Time"; ObjectID = "wby-ho-auT"; */
-"wby-ho-auT.text" = "Time";
+"wby-ho-auT.text" = "时间";
 
 /* Class = "IBUILabel"; text = "PrepTime"; ObjectID = "wjC-98-ufU"; */
-"wjC-98-ufU.text" = "PrepTime";
+"wjC-98-ufU.text" = "准备时间";
 
 /* Class = "IBUILabel"; text = "Medical Time"; ObjectID = "y98-ve-Ago"; */
-"y98-ve-Ago.text" = "Medical Time";
+"y98-ve-Ago.text" = "就诊时间";
 
 /* Class = "IBUILabel"; text = "empty"; ObjectID = "zCo-ch-dKl"; */
-"zCo-ch-dKl.text" = "empty";
+"zCo-ch-dKl.text" = "空";
 
 /* Class = "IBUILabel"; text = "Sample Time"; ObjectID = "ziy-XX-nds"; */
-"ziy-XX-nds.text" = "Sample Time";
+"ziy-XX-nds.text" = "取样时间";

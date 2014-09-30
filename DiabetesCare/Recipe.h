@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *prepTime; // preparation time
 @property (nonatomic, strong) NSString *image; // image filename of recipe
 @property (nonatomic, strong) NSArray *ingredients; // ingredients of recipe
+@property (nonatomic, strong) NSArray *chefsteps; // stpes
 
 @end
