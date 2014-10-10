@@ -56,7 +56,10 @@
     
     [self initTable];
     
-    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    
+ 
+    
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
     
@@ -101,7 +104,7 @@
     
     
     _admobBannerView = [[GADBannerView alloc]
-                        initWithFrame:CGRectMake(0.0,0.0,
+                        initWithFrame:CGRectMake(0.0,self.view.frame.size.height-GAD_SIZE_320x50.height,
                                                  GAD_SIZE_320x50.width,
                                                  GAD_SIZE_320x50.height)];
     
@@ -110,16 +113,14 @@
     self.admobBannerView.rootViewController = self;
     self.admobBannerView.delegate = self;
     
-    [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
-    
-    // Assumes the banner view is just off the bottom of the screen.
-    self.admobBannerView.frame = CGRectOffset(self.admobBannerView.frame, 0, -self.admobBannerView.frame.size.height);
-    
-    [UIView commitAnimations];
     
     // 4
     [self.view addSubview:self.admobBannerView];
-    [self.admobBannerView loadRequest:[GADRequest request]];
+    GADRequest *request = [GADRequest request];
+    
+
+    request.testDevices = @[ @"d07c07b9088108d8b4d7ffc109443888" ];
+    [self.admobBannerView loadRequest:request];
     
 }
 

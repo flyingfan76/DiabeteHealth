@@ -160,7 +160,7 @@
     
     recipes = [NSArray arrayWithObjects:recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15, recipe16, recipe17, recipe18, nil];
     
-    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
     
@@ -171,6 +171,26 @@
     
     [self.view addSubview:self.bannerView];
 }
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (self.bannerView){
+        return self.bannerView.frame.size.height;
+    }
+    return GAD_SIZE_320x50.height;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (self.bannerView){
+        return self.bannerView;
+    }else if (self.admobBannerView){
+        return self.admobBannerView;
+    }
+    return [[UIView alloc] initWithFrame:CGRectZero];
+}
+
 
 - (void)viewDidAppear:(BOOL)animated
 {

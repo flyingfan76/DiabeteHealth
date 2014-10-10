@@ -1,2 +1,3 @@
 /* Localized versions of Info.plist keys */
-
+"CFBundleDisplayName" = "关爱糖尿";
+"CFBundleName" = "关爱糖尿";

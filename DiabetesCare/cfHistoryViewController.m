@@ -65,7 +65,7 @@
                 [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
                 
                 // Assumes the banner view is just off the bottom of the screen.
-                self.graphView.frame = CGRectOffset(self.graphView.frame, 0, +64);
+                self.graphView.frame = CGRectOffset(self.graphView.frame, 0, 45);
                 
                 [UIView commitAnimations];
                 
@@ -83,7 +83,7 @@
                 [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
                 
                 // Assumes the banner view is just off the bottom of the screen.
-                self.pressureGraphView.frame = CGRectOffset(self.graphView.frame, 0, 200);
+                self.pressureGraphView.frame = CGRectOffset(self.graphView.frame, 0, 192);
                 
                 [UIView commitAnimations];
                 
@@ -98,12 +98,12 @@
     });
 
     
-    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
     
     // Assumes the banner view is just off the bottom of the screen.
-    self.bannerView.frame = CGRectOffset(self.bannerView.frame, 0, -self.bannerView.frame.size.height);
+    self.bannerView.frame = CGRectOffset(self.bannerView.frame, 0, - self.bannerView.frame.size.height);
     
     [UIView commitAnimations];
     
@@ -223,7 +223,22 @@
         
     }
     
-      return arrayItem;
+    //add one days more fake data
+    if ([arrayItem count] == 0){
+        GraphDataObject * object = [[GraphDataObject alloc] init];
+        
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSDateComponents *comps = [cal components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit)
+                                         fromDate:date];
+        
+        
+        object.time = [cal dateFromComponents:comps]; //This variable should now be pointing at
+        object.value = 0;
+        [arrayItem addObject:object];
+    }
+    
+    return arrayItem;
 }
 
 - (NSArray *)GenerateGraphDataObjectsArrayofAfterSuger{
@@ -254,6 +269,22 @@
         [arrayItem addObject:object];
         
     }
+    
+    //add one days more fake data
+    if ([arrayItem count] == 0){
+        GraphDataObject * object = [[GraphDataObject alloc] init];
+        
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSDateComponents *comps = [cal components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit)
+                                         fromDate:date];
+        
+        
+        object.time = [cal dateFromComponents:comps]; //This variable should now be pointing at
+        object.value = 0;
+        [arrayItem addObject:object];
+    }
+
     
     return arrayItem;
 }
@@ -286,6 +317,22 @@
         [arrayItem addObject:object];
         
     }
+    
+    //add one days more fake data
+    if ([arrayItem count] == 0){
+        GraphDataObject * object = [[GraphDataObject alloc] init];
+        
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSDateComponents *comps = [cal components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit)
+                                         fromDate:date];
+        
+        
+        object.time = [cal dateFromComponents:comps]; //This variable should now be pointing at
+        object.value = 0;
+        [arrayItem addObject:object];
+    }
+
     
     return arrayItem;
 }

@@ -99,7 +99,7 @@
 //    self.myDetailTableView.tableHeaderView = headerView;
     //self.myDetailTableView.tableHeaderView = myCalendarView;
     
-    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
     

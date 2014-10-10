@@ -87,7 +87,7 @@
    
     [self updateStaticContent];
     
-    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    self.bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
     [self.bannerView setDelegate:self];
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
     
@@ -95,6 +95,8 @@
     self.bannerView.frame = CGRectOffset(self.bannerView.frame, 0, -self.bannerView.frame.size.height);
     
     [UIView commitAnimations];
+    
+    [self setupAppearance];
     
     [self.view addSubview:self.bannerView];
 }
@@ -372,6 +374,16 @@
 - (void)PressureDidBack:(CFBloodPressureViewController *)controller{
     _fetchedResultsController = nil;
     [self updateStaticContent];
+}
+
+-(void)setupAppearance {
+    UIImage *minImage = [[UIImage imageNamed:@"slider_minimum.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
+    UIImage *maxImage = [[UIImage imageNamed:@"slider_maximum.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 5)];
+    //UIImage *thumbImage = [UIImage imageNamed:@"sliderhandle.png"];
+    
+    [[UISlider appearance] setMaximumTrackImage:maxImage forState:UIControlStateNormal];
+    [[UISlider appearance] setMinimumTrackImage:minImage forState:UIControlStateNormal];
+    //[[UISlider appearance] setThumbImage:thumbImage forState:UIControlStateNormal];
 }
 
 

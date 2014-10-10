@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "-generateOnePreSugarSeries"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434527728.227841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434527728.227841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434527728.227841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "-generateOnePreSugarSeries"
             landmarkType = "5">
          </BreakpointContent>
@@ -490,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "518"
-            endingLineNumber = "518"
+            startingLineNumber = "565"
+            endingLineNumber = "565"
             landmarkName = "-fetchedPreSugarResultsController"
             landmarkType = "5">
          </BreakpointContent>
@@ -506,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "547"
-            endingLineNumber = "547"
+            startingLineNumber = "594"
+            endingLineNumber = "594"
             landmarkName = "-fetchedPreSugarResultsController"
             landmarkType = "5">
          </BreakpointContent>
@@ -522,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "522"
-            endingLineNumber = "522"
+            startingLineNumber = "569"
+            endingLineNumber = "569"
             landmarkName = "-fetchedPreSugarResultsController"
             landmarkType = "5">
          </BreakpointContent>
@@ -554,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "-generateOnePreSugarSeries"
             landmarkType = "5">
          </BreakpointContent>
@@ -570,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "-generateOnePreSugarSeries"
             landmarkType = "5">
          </BreakpointContent>
@@ -586,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
             landmarkName = "-generateOnePreSugarSeries"
             landmarkType = "5">
          </BreakpointContent>
@@ -806,11 +806,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfRecommendedFoodedTableViewController.m"
-            timestampString = "433749957.317462"
+            timestampString = "434618916.461199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1142,7 +1142,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "306"
@@ -1174,7 +1174,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "363"
@@ -1190,7 +1190,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "351"
@@ -1718,7 +1718,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "336"
@@ -1734,11 +1734,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFMedicalRecordTableTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434619155.870624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-configureCell:atIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1750,11 +1750,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFMedicalRecordTableTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434619155.870624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1782,7 +1782,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "191"
@@ -1814,7 +1814,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "199"
@@ -1846,11 +1846,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433404624.948473"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-bannerView:didFailToReceiveAdWithError:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1862,7 +1862,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFDailyRecordTableViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "278"
@@ -1942,11 +1942,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434527728.227841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "-adView:didFailToReceiveAdWithError:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2006,11 +2006,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433414172.314238"
+            timestampString = "434527728.227841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "-adView:didFailToReceiveAdWithError:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2022,11 +2022,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CFRootViewController.m"
-            timestampString = "433407434.020606"
+            timestampString = "434526920.426771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-bannerView:didFailToReceiveAdWithError:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2226,11 +2226,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cfHistoryViewController.m"
-            timestampString = "433671810.02161"
+            timestampString = "434616913.67465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "-GenerateGraphDataObjectsArrayofAfterSuger"
             landmarkType = "5">
          </BreakpointContent>
@@ -2296,6 +2296,178 @@
             startingLineNumber = "251"
             endingLineNumber = "251"
             landmarkName = "-textField:shouldChangeCharactersInRange:replacementString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cfHistoryViewController.m"
+            timestampString = "434616215.449853"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cfHistoryViewController.m"
+            timestampString = "434616225.895764"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[cfHistoryViewController viewDidLoad]_block_invoke"
+                  moduleName = "DiabetesCare"
+                  urlString = "file:///Users/i052156/Documents/workbook/DiabetesCare/DiabetesCare/cfHistoryViewController.m"
+                  timestampString = "434616225.913598"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[cfHistoryViewController viewDidLoad]_block_invoke_2"
+                  moduleName = "DiabetesCare"
+                  urlString = "file:///Users/i052156/Documents/workbook/DiabetesCare/DiabetesCare/cfHistoryViewController.m"
+                  timestampString = "434616225.913835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cfHistoryViewController.m"
+            timestampString = "434616231.376833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[cfHistoryViewController viewDidLoad]"
+                  moduleName = "DiabetesCare"
+                  urlString = "file:///Users/i052156/Documents/workbook/DiabetesCare/DiabetesCare/cfHistoryViewController.m"
+                  timestampString = "434616231.390949"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "506">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[cfHistoryViewController viewDidLoad]_block_invoke"
+                  moduleName = "DiabetesCare"
+                  urlString = "file:///Users/i052156/Documents/workbook/DiabetesCare/DiabetesCare/cfHistoryViewController.m"
+                  timestampString = "434616231.391182"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cfHistoryViewController.m"
+            timestampString = "434616258.322316"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cfHistoryViewController.m"
+            timestampString = "434616262.20243"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CFMedicalRecordTableTableViewController.m"
+            timestampString = "434619509.886313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CFDisplaySinglePictureViewController.m"
+            timestampString = "434619687.679455"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
