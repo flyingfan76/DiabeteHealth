@@ -153,7 +153,7 @@
                                                  GAD_SIZE_320x50.height)];
     
     // 3
-    self.admobBannerView.adUnitID = @"a14ec3f0a2028f2";  //to be change
+    self.admobBannerView.adUnitID = @"ca-app-pub-5104806357489598/9820115066";  //to be change
     self.admobBannerView.rootViewController = self;
     self.admobBannerView.delegate = self;
     [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
@@ -255,8 +255,9 @@
         [self.myCollectionView deselectItemAtIndexPath:indexPath animated:YES];
         
     }else{
-        [self performSegueWithIdentifier:@"showPhoto" sender:self];
         selectedItem = indexPath.row;
+        [self performSegueWithIdentifier:@"showPhoto" sender:self];
+
         [self.myCollectionView deselectItemAtIndexPath:indexPath animated:YES];
 
     }
