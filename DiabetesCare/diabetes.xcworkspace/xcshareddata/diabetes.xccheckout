@@ -10,29 +10,29 @@
 	<string>diabetes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4A182DE3-2CD7-41EF-8E03-323BA9481AA5</key>
+		<key>90101855D0DAF8D6692D278A74CAECE336DA6481</key>
 		<string>https://github.com/flyingfan76/DiabeteHealth.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DiabetesCare/diabetes.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4A182DE3-2CD7-41EF-8E03-323BA9481AA5</key>
+		<key>90101855D0DAF8D6692D278A74CAECE336DA6481</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/flyingfan76/DiabeteHealth.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4A182DE3-2CD7-41EF-8E03-323BA9481AA5</string>
+	<string>90101855D0DAF8D6692D278A74CAECE336DA6481</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4A182DE3-2CD7-41EF-8E03-323BA9481AA5</string>
+			<string>90101855D0DAF8D6692D278A74CAECE336DA6481</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DiabetesCare</string>
 		</dict>
